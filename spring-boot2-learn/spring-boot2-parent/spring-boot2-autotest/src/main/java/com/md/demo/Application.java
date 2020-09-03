@@ -5,9 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * 程序主入口
- * 
- * @author Minbo
- *
  */
 @SpringBootApplication
 public class Application {
