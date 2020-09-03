@@ -18,9 +18,6 @@ import junit.framework.TestCase;
 
 /**
  * 普通Web接口测试
- * 
- * @author Minbo
- *
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT) // 指定启动类和随机端口

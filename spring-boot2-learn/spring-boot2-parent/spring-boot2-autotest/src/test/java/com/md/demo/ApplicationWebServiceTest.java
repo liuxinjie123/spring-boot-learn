@@ -14,9 +14,6 @@ import junit.framework.TestCase;
 
 /**
  * 普通业务服务层测试
- * 
- * @author Minbo
- *
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class) // 指定启动类
@@ -29,11 +26,9 @@ public class ApplicationWebServiceTest {
 
 	/**
 	 * 测试方法
-	 * 
-	 * @throws Exception
 	 */
 	@Test
-	public void testService() throws Exception {
+	public void testService() {
 		// 检查入口配置是否正确
 		String result = this.demoService.sayHello();
 		logger.info("实际返回结果result=" + result);

@@ -20,9 +20,6 @@ import org.springframework.web.context.WebApplicationContext;
 
 /**
  * 使用MockMvc测试接口
- * 
- * @author Minbo
- *
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class) // 指定启动类
@@ -38,7 +35,7 @@ public class ApplicationMockTest {
 	private WebApplicationContext context;
 
 	@Before
-	public void setupMockMvc() throws Exception {
+	public void setupMockMvc() {
 		mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
 	}
 
