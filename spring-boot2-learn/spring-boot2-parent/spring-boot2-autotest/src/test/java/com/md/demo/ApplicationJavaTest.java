@@ -15,9 +15,6 @@ import java.time.LocalDateTime;
 
 /**
  * 普通Java测试，比如配置参数加载，静态方法返回值等
- * 
- * @author Minbo
- *
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = { ApplicationJavaTest.class }) // 指定启动类
@@ -38,11 +35,11 @@ public class ApplicationJavaTest {
 
 	@Before
 	public void testBefore() {
-		logger.info("before, currentTime:" + LocalDateTime.now());
+		logger.info("before, {}.", LocalDateTime.now());
 	}
 
 	@After
 	public void testAfter() {
-		logger.info("after, currentTime:" + LocalDateTime.now());
+		logger.info("after, {}.", LocalDateTime.now());
 	}
 }
