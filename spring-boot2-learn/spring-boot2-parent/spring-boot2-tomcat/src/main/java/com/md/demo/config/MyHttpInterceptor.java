@@ -1,6 +1,7 @@
-package com.md.demo;
+package com.md.demo.config;
 
 import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,8 +17,6 @@ import com.md.demo.service.DemoService;
 
 /**
  * 拦截处理类
- * 
- * @author Minbo.He
  */
 @Component
 public class MyHttpInterceptor extends HandlerInterceptorAdapter {
@@ -27,6 +26,7 @@ public class MyHttpInterceptor extends HandlerInterceptorAdapter {
 	@Autowired
 	private DemoService demoService;
 
+	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		String url = request.getRequestURL().toString();
@@ -57,8 +57,10 @@ public class MyHttpInterceptor extends HandlerInterceptorAdapter {
 		String userId = request.getParameter("userId");
 		if (userId != null) {
 			return true;
-
 		} else {
+			Map<String, String> result = new HashMap<>();
+			result.put("code", "4001");
+			result.put("msg", )
 			this.output(response, "{\n" 
 					+ "\"code\": \"4001\",\n" 
 					+ "\"message\": \"参数错误\"\n" 
