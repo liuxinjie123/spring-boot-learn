@@ -58,12 +58,9 @@ public class MyHttpInterceptor extends HandlerInterceptorAdapter {
 		if (userId != null) {
 			return true;
 		} else {
-			Map<String, String> result = new HashMap<>();
-			result.put("code", "4001");
-			result.put("msg", )
-			this.output(response, "{\n" 
-					+ "\"code\": \"4001\",\n" 
-					+ "\"message\": \"参数错误\"\n" 
+			this.output(response, "{\n"
+					+ "\"code\": \"4001\",\n"
+					+ "\"message\": \"参数错误\"\n"
 					+ "}");
 			return false;
 		}

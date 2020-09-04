@@ -12,7 +12,6 @@ import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 @Configuration
 public class ScheduleConfig implements SchedulingConfigurer {
 
-	@Override
 	public void configureTasks(ScheduledTaskRegistrar taskRegistrar) {
 		// 开启一个固定10个大小的线程池，也使用Executors下其他的线程池
 		taskRegistrar.setScheduler(Executors.newScheduledThreadPool(10));
