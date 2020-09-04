@@ -1,4 +1,4 @@
-package com.md.demo;
+package com.md.demo.schedule;
 
 import java.util.concurrent.Executors;
 
