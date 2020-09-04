@@ -10,9 +10,6 @@ import com.md.demo.service.DemoService;
 
 /**
  * 任务中心1
- * 
- * @author Minbo.He
- *
  */
 @Component
 public class ScheduledTasks {

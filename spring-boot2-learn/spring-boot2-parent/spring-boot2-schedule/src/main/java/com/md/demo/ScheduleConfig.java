@@ -8,8 +8,6 @@ import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 
 /**
  * 并行多线程任务功能（方式一）
- * 
- * @author Minbo.He
  */
 @Configuration
 public class ScheduleConfig implements SchedulingConfigurer {
