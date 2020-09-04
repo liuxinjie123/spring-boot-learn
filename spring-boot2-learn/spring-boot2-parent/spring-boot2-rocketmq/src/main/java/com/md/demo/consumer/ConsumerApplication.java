@@ -19,9 +19,6 @@ import com.md.demo.vo.OrderPaidEvent;
  * 消费者，消费消息
  * 
  * 直接run运行即可
- * 
- * @author Minbo
- *
  */
 public class ConsumerApplication {
 

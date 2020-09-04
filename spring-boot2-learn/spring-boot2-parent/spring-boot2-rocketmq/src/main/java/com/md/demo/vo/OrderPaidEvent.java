@@ -5,9 +5,6 @@ import java.math.BigDecimal;
 
 /**
  * 虚拟一个订单支付事件
- * 
- * @author Minbo
- *
  */
 public class OrderPaidEvent implements Serializable {
 

@@ -15,13 +15,10 @@ import com.md.demo.MyTopics;
 import com.md.demo.vo.OrderPaidEvent;
 import com.zc.smartcity.rocketmq.core.RocketMQTemplate;
 
-/**
- * @author Minbo
- */
 @RestController
-public class InitRest {
+public class InitRestController {
 
-	protected static Logger logger = LoggerFactory.getLogger(InitRest.class);
+	protected static Logger logger = LoggerFactory.getLogger(InitRestController.class);
 
 	@Resource
 	private RocketMQTemplate rocketMQTemplate;

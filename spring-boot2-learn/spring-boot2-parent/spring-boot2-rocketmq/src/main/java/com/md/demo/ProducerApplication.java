@@ -9,9 +9,6 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * 程序主入口（Producer生产者，发送消息）
- * 
- * @author Minbo
- *
  */
 @SpringBootApplication
 public class ProducerApplication {
@@ -22,8 +19,6 @@ public class ProducerApplication {
 
 	/**
 	 * 开启过滤器功能
-	 * 
-	 * @return
 	 */
 	private CorsConfiguration buildConfig() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
@@ -35,8 +30,6 @@ public class ProducerApplication {
 
 	/**
 	 * 跨域过滤器
-	 * 
-	 * @return
 	 */
 	@Bean
 	public CorsFilter corsFilter() {

@@ -1,11 +1,14 @@
 package com.md.demo;
 
 import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.alibaba.fastjson.JSON;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +19,6 @@ import com.md.demo.service.DemoService;
 
 /**
  * 拦截处理类
- * 
- * @author Minbo.He
  */
 @Component
 public class MyHttpInterceptor extends HandlerInterceptorAdapter {
@@ -27,6 +28,7 @@ public class MyHttpInterceptor extends HandlerInterceptorAdapter {
 	@Autowired
 	private DemoService demoService;
 
+	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		String url = request.getRequestURL().toString();
@@ -57,12 +59,11 @@ public class MyHttpInterceptor extends HandlerInterceptorAdapter {
 		String userId = request.getParameter("userId");
 		if (userId != null) {
 			return true;
-
 		} else {
-			this.output(response, "{\n" 
-					+ "\"code\": \"4001\",\n" 
-					+ "\"message\": \"参数错误\"\n" 
-					+ "}");
+			Map<String, String> result = new HashMap<>();
+			result.put("code", "4001");
+			result.put("msg", "参数错误");
+			this.output(response, JSON.toJSONString(result));
 			return false;
 		}
 	}
