@@ -12,8 +12,6 @@ public class InitRestController {
 
 	/**
 	 * http://localhost:9090/hello
-	 * 
-	 * @return
 	 */
 	@GetMapping("/hello")
 	public String hello() {

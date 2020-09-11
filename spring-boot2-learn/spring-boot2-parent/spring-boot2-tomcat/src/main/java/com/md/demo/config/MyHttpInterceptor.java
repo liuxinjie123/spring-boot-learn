@@ -1,7 +1,6 @@
 package com.md.demo.config;
 
 import java.io.PrintWriter;
-import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;

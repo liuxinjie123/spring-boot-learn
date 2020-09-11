@@ -9,10 +9,8 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 自定义实现Tomcat配置
- * 
- * @author Minbo
- * 
- *         当和配置application.yml一起都配置时，以配置文件为准。想要代码生效，可把文件重命名为application.yml.bak
+ *
+ * 当和配置application.yml一起都配置时，以配置文件为准。想要代码生效，可把文件重命名为application.yml.bak
  */
 @Configuration
 public class MyTomcatCustomizer {
