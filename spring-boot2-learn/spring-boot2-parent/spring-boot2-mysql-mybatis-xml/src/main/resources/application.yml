@@ -1,10 +1,11 @@
 spring: 
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.101:3306/cfdb?useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
 server:
-  port: 9090
+  port: 9091
 mybatis: 
   config-location: classpath:mybatis-config.xml
+

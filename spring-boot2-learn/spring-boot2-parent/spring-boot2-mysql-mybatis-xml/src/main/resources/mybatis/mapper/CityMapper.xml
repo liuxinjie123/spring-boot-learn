@@ -8,7 +8,7 @@
 		select * from city
 	</select>
 	
-	<select id="getCityById" resultType="com.md.demo.vo.CityVo">
+	<select id="getById" resultType="com.md.demo.vo.CityVo">
 		select * from city where id = #{id}
 	</select>
 

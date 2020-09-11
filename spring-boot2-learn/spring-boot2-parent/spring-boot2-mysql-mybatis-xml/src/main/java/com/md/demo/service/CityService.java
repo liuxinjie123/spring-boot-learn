@@ -5,7 +5,7 @@ import com.md.demo.vo.CityVo;
 
 public interface CityService {
 
-	public List<CityVo> listCities();
+	public List<CityVo> list();
 
-	public CityVo getCityById(Long id);
+	public CityVo findById(Long id);
 }
