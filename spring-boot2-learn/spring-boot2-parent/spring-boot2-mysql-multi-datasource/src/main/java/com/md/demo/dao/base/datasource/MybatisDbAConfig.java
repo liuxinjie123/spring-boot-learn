@@ -25,7 +25,8 @@ public class MybatisDbAConfig {
     @Bean
     public SqlSessionFactory sqlSessionFactory1() throws Exception {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
-        factoryBean.setDataSource(ds1); // 使用master数据源, 连接master库
+        factoryBean.setDataSource(ds1);
+        // 使用master数据源, 连接master库
         factoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(localMapper));
         return factoryBean.getObject();
     }

@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class DataSourceConfig {
-
 	@Primary
 	@Qualifier("master")
 	@Bean(name = "master")
@@ -19,6 +18,7 @@ public class DataSourceConfig {
 	public DataSource masterDataSource() {
 		return DataSourceBuilder.create().build();
 	}
+
 
 	@Qualifier("slave")
 	@Bean(name = "slave")

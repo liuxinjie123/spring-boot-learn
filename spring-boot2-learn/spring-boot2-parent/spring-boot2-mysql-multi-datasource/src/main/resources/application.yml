@@ -1,10 +1,10 @@
 spring:
   datasource: 
     master: 
-      jdbc-url: jdbc:mysql://192.168.1.1:33061/cfdb?useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false
+      jdbc-url: jdbc:mysql://192.168.1.1:3306/dev?useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false
       username: root
       password: 123456
-      driver-class-name: com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.cj.jdbc.Driver
       # 使用默认hikari连接池
       type: com.zaxxer.hikari.HikariDataSource
       minimum-idle: 5
@@ -15,10 +15,10 @@ spring:
       connection-test-query: SELECT 1
       validation-timeout: 5000
     slave: 
-      jdbc-url: jdbc:mysql://192.168.1.1:33062/cfdb?useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false
+      jdbc-url: jdbc:mysql://192.168.1.1:3306/test?useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false
       username: root
       password: 123456
-      driver-class-name: com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.cj.jdbc.Driver
       # 使用默认hikari连接池
       type: com.zaxxer.hikari.HikariDataSource
       minimum-idle: 5

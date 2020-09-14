@@ -20,4 +20,5 @@ public abstract class BaseDao {
 	@Resource(name = "slaveSessionTemplate")
 	@Autowired
 	public SqlSessionTemplate sqlSessionTemplateOfSlave;
+
 }

@@ -64,7 +64,7 @@
 			<groupId>alipay-sdk</groupId>
 			<artifactId>alipay-sdk</artifactId>
 			<scope>system</scope>
-			<systemPath></systemPath>
+			<systemPath>${project.basedir}/lib/alipay-sdk-1.0.jar</systemPath>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.alipay.sdk/alipay-sdk-java -->
