@@ -1,10 +1,12 @@
 package com.md.demo.bo;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
 @Data
+@NoArgsConstructor
 public class City implements Serializable {
 	private Long id;
 
