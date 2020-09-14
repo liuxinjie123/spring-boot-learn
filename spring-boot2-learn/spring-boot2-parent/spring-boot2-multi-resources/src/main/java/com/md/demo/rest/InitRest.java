@@ -13,9 +13,6 @@ import com.md.demo.util.JsonResult;
 import com.md.demo.util.ResultCode;
 import com.md.demo.vo.CityVo;
 
-/**
- * @author Minbo
- */
 @RestController
 public class InitRest {
 
