@@ -21,9 +21,6 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
 /**
  * 代码生成器
- * 
- * @author Minbo
- *
  */
 public class CodeGenerator {
 
@@ -47,10 +44,10 @@ public class CodeGenerator {
 
 		// 数据源配置
 		DataSourceConfig dsc = new DataSourceConfig();
-		dsc.setUrl("jdbc:mysql://localhost:33061/test?useUnicode=true&useSSL=false&characterEncoding=utf8");
-		dsc.setDriverName("com.mysql.jdbc.Driver");
+		dsc.setUrl("jdbc:mysql://localhost:3306/test?useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC");
+		dsc.setDriverName("com.mysql.cj.jdbc.Driver");
 		dsc.setUsername("root");
-		dsc.setPassword("hs2019");
+		dsc.setPassword("123456");
 		mpg.setDataSource(dsc);
 
 		// 包配置

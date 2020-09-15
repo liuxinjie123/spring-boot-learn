@@ -1,4 +1,4 @@
-package com.md.demo;
+package com.md.demo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,7 +42,7 @@ public class SwaggerConfig {
 				// 服务条款
 				.termsOfServiceUrl("https://blog.csdn.net/hemin1003")
 				// 作者个人信息
-				.contact("Minbo.He")
+				.contact("jack")
 				// 版本
 				.version("1.0").build();
 	}

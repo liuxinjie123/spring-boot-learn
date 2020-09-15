@@ -1,6 +1,6 @@
-package com.md.demo.test.service;
+package com.md.demo.user.service;
 
-import com.md.demo.test.entity.vo.Myuser;
+import com.md.demo.user.entity.vo.Myuser;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -8,9 +8,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  *  服务类
  * </p>
  *
- * @author MMinbo
- * @since 2019-10-25
+ * @author jack
+ * @since 2020-09-15
  */
 public interface IMyuserService extends IService<Myuser> {
-	public Myuser getUserByName(String name);
+
 }

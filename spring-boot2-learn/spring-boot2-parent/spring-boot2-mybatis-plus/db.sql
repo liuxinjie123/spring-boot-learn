@@ -1,6 +1,6 @@
-drop table myuser;
+drop table if exists user;
 
-CREATE TABLE `myuser` (
+CREATE TABLE `user` (
   `id` bigint(20) NOT NULL COMMENT '主键ID',
   `name` varchar(30) DEFAULT NULL COMMENT '姓名',
   `age` int(11) DEFAULT NULL COMMENT '年龄',
@@ -11,5 +11,5 @@ CREATE TABLE `myuser` (
 
 INSERT INTO `myuser` (`id`, `name`, `age`, `email`)
 VALUES
-	(1, 'Minbo', 18, 'test1@163.com'),
-	(2, 'Hemin', 20, 'test2@163.com');
+	(1, 'dream', 18, '112232232@qq.com'),
+	(2, 'hello', 20, 'hellojava@163.com');

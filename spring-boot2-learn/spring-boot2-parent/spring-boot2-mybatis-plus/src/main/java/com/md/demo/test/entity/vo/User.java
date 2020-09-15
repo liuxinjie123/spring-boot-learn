@@ -7,22 +7,11 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
-/**
- * <p>
- * 
- * </p>
- *
- * @author MMinbo
- * @since 2019-10-25
- */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="Myuser对象", description="")
-public class Myuser implements Serializable {
-
-    private static final long serialVersionUID = 1L;
-
+@ApiModel(value="user对象", description="")
+public class User implements Serializable {
     @ApiModelProperty(value = "主键ID")
     private Long id;
 
