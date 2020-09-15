@@ -9,18 +9,13 @@ import com.md.core.leafid.MdIdsGen;
 import com.md.demo.util.JsonResult;
 import com.md.demo.util.ResultCode;
 
-/**
- * @author Minbo
- */
 @RestController
-public class InitRest {
+public class InitController {
 
-	protected static Logger logger = LoggerFactory.getLogger(InitRest.class);
+	protected static Logger logger = LoggerFactory.getLogger(InitController.class);
 
 	/**
 	 * http://localhost:9090/hello
-	 * 
-	 * @return
 	 */
 	@GetMapping("/hello")
 	public String hello() {
@@ -29,8 +24,6 @@ public class InitRest {
 
 	/**
 	 * http://localhost:9090/getNewId
-	 * 
-	 * @return
 	 */
 	@GetMapping("/getNewId")
 	public JsonResult getNewId() {

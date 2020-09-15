@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import com.google.common.base.Preconditions;
 import com.md.core.leafid.Result;
 import com.md.core.leafid.Status;
-import com.md.core.leafid.Utils;
+import com.md.core.leafid.util.NetUtils;
 import com.md.core.leafid.id.IDGen;
 
 public class SnowflakeIDGenImpl implements IDGen {
@@ -36,7 +36,7 @@ public class SnowflakeIDGenImpl implements IDGen {
 
 	public SnowflakeIDGenImpl(String zkAddress, int port) {
 		this.port = port;
-		SnowflakeZookeeperHolder holder = new SnowflakeZookeeperHolder(Utils.getIp(), String.valueOf(port), zkAddress);
+		SnowflakeZookeeperHolder holder = new SnowflakeZookeeperHolder(NetUtils.getIp(), String.valueOf(port), zkAddress);
 		initFlag = holder.init();
 		if (initFlag) {
 			workerId = holder.getWorkerID();

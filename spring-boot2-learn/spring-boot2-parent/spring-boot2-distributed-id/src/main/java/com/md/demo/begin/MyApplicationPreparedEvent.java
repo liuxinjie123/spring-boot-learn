@@ -13,9 +13,9 @@ import com.md.core.leafid.MdIdsGen;
 /**
  * 监听器：项目初始化时调用类
  * 
- * ApplicationPreparedEvent：spring boot上下文context创建完成，但此时spring中的bean是没有完全加载完成的。
+ * ApplicationPreparedEvent：
+ * spring boot上下文context创建完成，但此时spring中的bean是没有完全加载完成的。
  * 
- * @author Minbo
  */
 public class MyApplicationPreparedEvent implements ApplicationListener<ApplicationPreparedEvent> {
 

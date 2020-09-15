@@ -30,20 +30,26 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 与注册中心建立连接，初始化绑定服务的全局id值
- * 
- * @author Minbo
- *
  */
 public class SnowflakeZookeeperHolder {
 	private static final Logger LOGGER = LoggerFactory.getLogger(SnowflakeZookeeperHolder.class);
-	private String zk_AddressNode = null;// 保存自身的key ip:port-000000001
-	private String listenAddress = null;// 保存自身的key ip:port
+
+	// 保存自身的key ip:port-000000001
+	private String zk_AddressNode = null;
+
+	// 保存自身的key ip:port
+	private String listenAddress = null;
 	private int workerID;
+
 	private static final String PREFIX_ZK_PATH = "/snowflake/"
 			+ PropertyFactory.getProperties().getProperty("leaf.name");
+
 	private static final String PROP_PATH = System.getProperty("java.io.tmpdir") + File.separator
 			+ PropertyFactory.getProperties().getProperty("leaf.name") + "/leafconf/{port}/workerID.properties";
-	private static final String PATH_FOREVER = PREFIX_ZK_PATH + "/forever";// 保存所有数据持久的节点
+
+	// 保存所有数据持久的节点
+	private static final String PATH_FOREVER = PREFIX_ZK_PATH + "/forever";
+
 	private String ip;
 	private String port;
 	private String connectionString;
@@ -71,8 +77,11 @@ public class SnowflakeZookeeperHolder {
 				ScheduledUploadData(curator, zk_AddressNode);
 				return true;
 			} else {
-				Map<String, Integer> nodeMap = Maps.newHashMap();// ip:port->00001
-				Map<String, String> realNode = Maps.newHashMap();// ip:port->(ipport-000001)
+				// ip:port->00001
+				Map<String, Integer> nodeMap = Maps.newHashMap();
+				// ip:port->(ipport-000001)
+				Map<String, String> realNode = Maps.newHashMap();
+
 				// 存在根节点,先检查是否有属于自己的根节点
 				List<String> keys = curator.getChildren().forPath(PATH_FOREVER);
 				for (String key : keys) {
@@ -85,9 +94,10 @@ public class SnowflakeZookeeperHolder {
 					// 有自己的节点,zk_AddressNode=ip:port
 					zk_AddressNode = PATH_FOREVER + "/" + realNode.get(listenAddress);
 					workerID = workerid;// 启动worder时使用会使用
-					if (!checkInitTimeStamp(curator, zk_AddressNode))
+					if (!checkInitTimeStamp(curator, zk_AddressNode)) {
 						throw new CheckLastTimeException(
 								"init timestamp check error,forever node timestamp gt this node time");
+					}
 					// 准备创建临时节点
 					doService(curator);
 					updateLocalWorkerID(workerID);

@@ -11,9 +11,6 @@ import com.md.demo.begin.MyApplicationPreparedEvent;
 
 /**
  * 程序主入口
- * 
- * @author Minbo
- *
  */
 @SpringBootApplication
 public class Application {

@@ -1,5 +1,10 @@
 package com.md.core.leafid;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class CheckVO {
     private long timestamp;
     private int workID;
@@ -9,19 +14,4 @@ public class CheckVO {
         this.workID = workID;
     }
 
-    public long getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(long timestamp) {
-        this.timestamp = timestamp;
-    }
-
-    public int getWorkID() {
-        return workID;
-    }
-
-    public void setWorkID(int workID) {
-        this.workID = workID;
-    }
 }
