@@ -4,28 +4,39 @@ import net.sf.json.JSONObject;
 
 public class JsonResult {
 	private String code;
-	private String message;
+	private String msg;
 	private Object data;
 
-	public JsonResult() {
-		this.setCode(ResultCode.SUCCESS);
-		this.setMessage(ResultCode.SUCCESS.msg());
+	public static JsonResult success() {
+		return new JsonResult(ResultCode.SUCCESS);
+	}
+
+	public static JsonResult success(Object data) {
+		return new JsonResult(ResultCode.SUCCESS, data);
+	}
+
+	public static JsonResult error() {
+		return new JsonResult(ResultCode.SYSTEM_ERROR);
+	}
+
+	public static JsonResult error(ResultCode code) {
+		return new JsonResult(code);
 	}
 
 	public JsonResult(ResultCode code) {
-		this.setCode(code);
-		this.setMessage(code.msg());
+		this.setCode(code.code);
+		this.setMsg(code.msg);
 	}
 
 	public JsonResult(ResultCode code, String data) {
-		this.setCode(code);
-		this.setMessage(code.msg());
+		this.setCode(code.code);
+		this.setMsg(code.msg);
 		this.setData(data);
 	}
 
 	public JsonResult(ResultCode code, Object data) {
-		this.setCode(code);
-		this.setMessage(code.msg());
+		this.setCode(code.code);
+		this.setMsg(code.msg);
 		this.setData(data);
 	}
 
@@ -33,16 +44,16 @@ public class JsonResult {
 		return code;
 	}
 
-	public void setCode(ResultCode code) {
-		this.code = code.val();
+	public void setCode(String code) {
+		this.code = code;
 	}
 
-	public String getMessage() {
-		return message;
+	public String getMsg() {
+		return msg;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
+	public void setMsg(String msg) {
+		this.msg = msg;
 	}
 
 	public Object getData() {

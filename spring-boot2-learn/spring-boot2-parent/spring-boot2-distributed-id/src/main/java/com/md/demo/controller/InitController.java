@@ -25,9 +25,9 @@ public class InitController {
 	/**
 	 * http://localhost:9090/getNewId
 	 */
-	@GetMapping("/getNewId")
+	@GetMapping("/createId")
 	public JsonResult getNewId() {
 		Long id = MdIdsGen.getId();
-		return new JsonResult(ResultCode.SUCCESS, id);
+		return JsonResult.success(id);
 	}
 }

@@ -19,8 +19,7 @@ public class MyHttpInterceptor extends HandlerInterceptorAdapter {
 	protected static Logger logger = LoggerFactory.getLogger(MyHttpInterceptor.class);
 	
 	@Override
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
-			throws Exception {
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		String url = request.getRequestURL().toString();
 		String method = request.getMethod();
 		String queryString = "";

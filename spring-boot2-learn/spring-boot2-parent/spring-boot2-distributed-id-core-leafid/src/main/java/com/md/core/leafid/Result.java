@@ -1,6 +1,5 @@
 package com.md.core.leafid;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
