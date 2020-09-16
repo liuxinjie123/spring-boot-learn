@@ -14,7 +14,7 @@ public class DemoServiceImpl implements DemoService {
 	private DemoDao demoDao;
 
 	@Override
-	public void addDemo(DemoEntity demoEntity) {
+	public void add(DemoEntity demoEntity) {
 		this.demoDao.saveDemo(demoEntity);
 	}
 
@@ -31,8 +31,8 @@ public class DemoServiceImpl implements DemoService {
 	}
 
 	@Override
-	public DemoEntity findDemoById(Long id) {
-		return this.demoDao.findDemoById(id);
+	public DemoEntity findById(Long id) {
+		return this.demoDao.findById(id);
 	}
 
 }

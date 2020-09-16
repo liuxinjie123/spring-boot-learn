@@ -40,7 +40,7 @@ public class DemoDaoImpl implements DemoDao {
     }
 
     @Override
-    public DemoEntity findDemoById(Long id) {
+    public DemoEntity findById(Long id) {
         Query query = new Query(Criteria.where("id").is(id));
         DemoEntity demoEntity = mongoTemplate.findOne(query, DemoEntity.class);
         return demoEntity;

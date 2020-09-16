@@ -10,5 +10,5 @@ public interface DemoDao {
 
 	void updateDemo(DemoEntity demoEntity);
 
-	DemoEntity findDemoById(Long id);
+	DemoEntity findById(Long id);
 }
