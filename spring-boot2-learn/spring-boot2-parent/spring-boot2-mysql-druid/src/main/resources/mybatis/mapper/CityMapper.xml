@@ -2,13 +2,13 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.md.demo.vo.CityVo">
+<mapper namespace="com.dream.demo.vo.CityVo">
 
-	<select id="list" resultType="com.md.demo.vo.CityVo">
+	<select id="list" resultType="com.dream.demo.vo.CityVo">
 		select * from city
 	</select>
 	
-	<select id="findById" resultType="com.md.demo.vo.CityVo">
+	<select id="findById" resultType="com.dream.demo.vo.CityVo">
 		select * from city where id = #{id}
 	</select>
 

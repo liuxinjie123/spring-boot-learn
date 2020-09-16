@@ -1,4 +1,1 @@
-2020-09-11 10:49:20,099 [main] [com.md.demo.Application] [INFO] (StartupInfoLogger.java:55)- Starting Application on hw20172462 with PID 9844 (E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-mysql-mybatis-xml\target\classes started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-mysql-mybatis-xml)
-2020-09-11 10:49:20,102 [main] [com.md.demo.Application] [DEBUG] (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-09-11 10:49:20,102 [main] [com.md.demo.Application] [INFO] (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
-2020-09-11 10:49:23,046 [main] [com.md.demo.Application] [INFO] (StartupInfoLogger.java:61)- Started Application in 3.34 seconds (JVM running for 3.834)
+2020-09-16 10:26:46,766 [http-nio-9090-exec-1] [com.md.demo.MyHttpInterceptor] [INFO] (MyHttpInterceptor.java:37)- 请求参数, url: http://localhost:9090/hello, method: GET, params: null
