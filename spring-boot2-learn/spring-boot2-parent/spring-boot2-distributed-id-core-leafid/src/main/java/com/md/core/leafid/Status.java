@@ -1,6 +1,6 @@
 package com.md.core.leafid;
 
-public enum  Status {
+public enum Status {
     SUCCESS,
     EXCEPTION
 }

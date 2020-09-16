@@ -8,6 +8,7 @@ import com.md.core.leafid.snowflake.SnowflakeIDGenImpl;
 
 /**
  * 分布式id生成器
+ * @author 20172462
  */
 public class MdIdsGen {
 

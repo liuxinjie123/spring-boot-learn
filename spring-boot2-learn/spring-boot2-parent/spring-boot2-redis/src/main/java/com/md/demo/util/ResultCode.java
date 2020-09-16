@@ -15,22 +15,17 @@ public enum ResultCode {
 	SUCCESS_ALL_GONE("203", "今天的量已经跑光了"),
 
 	/** 失败，请重试 */
-	SUCCESS_FAIL("204", "失败，请重试");
+	SUCCESS_FAIL("204", "失败，请重试"),
 
-	private ResultCode(String val, String msg) {
-		this.val = val;
+	// 系统异常
+	SYSTEM_ERROR("111111", "网络异常，请稍后再试");
+
+	private ResultCode(String code, String msg) {
+		this.code = code;
 		this.msg = msg;
 	}
 
-	public String val() {
-		return val;
-	}
-
-	public String msg() {
-		return msg;
-	}
-
-	private String val;
-	private String msg;
+	public String code;
+	public String msg;
 
 }
