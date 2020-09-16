@@ -1,4 +1,4 @@
-package com.dream.demo;
+package com.dream.demo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,8 +8,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 /**
  * 拦截器定义
- * 
- * @author Minbo.He
  */
 @Configuration
 public class WebConfig extends WebMvcConfigurationSupport {
