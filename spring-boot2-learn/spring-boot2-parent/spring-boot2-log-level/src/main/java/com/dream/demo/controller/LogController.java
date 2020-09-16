@@ -47,7 +47,7 @@ public class LogController {
 	@GetMapping("/getLogger")
 	public JsonResult getLogger() {
 		String port = this.environment.getProperty("local.server.port");
-		String url = "http://localhost:" + port + "/actuator/loggers/com.md";
+		String url = "http://localhost:" + port + "/actuator/loggers/com.dream";
 		String result = HttpRequestUtil.sendGet(url);
 		log.info("当前项目：日志输出级别，url={}，result={}", url, result);
 		return JsonResult.ok(result);
@@ -62,7 +62,7 @@ public class LogController {
 	@PostMapping("/setLogger")
 	public JsonResult setLogger(@RequestHeader String logLevel) {
 		String port = this.environment.getProperty("local.server.port");
-		String url = "http://localhost:" + port + "/actuator/loggers/com.md";
+		String url = "http://localhost:" + port + "/actuator/loggers/com.dream";
 		String param = "{\"configuredLevel\":\"" + logLevel + "\"}";
 		String result = HttpRequestUtil.sendJsonPost(url, param);
 		log.info("设置当前项目：日志输出级别，url={}，param={}，result={}", url, param, result);

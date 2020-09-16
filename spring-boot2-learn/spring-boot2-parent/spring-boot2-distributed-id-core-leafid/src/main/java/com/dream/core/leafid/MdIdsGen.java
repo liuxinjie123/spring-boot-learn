@@ -1,10 +1,9 @@
-package com.md.core.leafid;
+package com.dream.core.leafid;
 
+import com.dream.core.leafid.id.IDGen;
+import com.dream.core.leafid.snowflake.SnowflakeIDGenImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.md.core.leafid.id.IDGen;
-import com.md.core.leafid.snowflake.SnowflakeIDGenImpl;
 
 /**
  * 分布式id生成器

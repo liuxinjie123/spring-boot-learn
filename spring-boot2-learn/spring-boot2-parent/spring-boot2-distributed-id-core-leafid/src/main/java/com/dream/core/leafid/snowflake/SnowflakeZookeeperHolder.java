@@ -1,5 +1,7 @@
-package com.md.core.leafid.snowflake;
+package com.dream.core.leafid.snowflake;
 
+import com.dream.core.leafid.PropertyFactory;
+import com.dream.core.leafid.snowflake.exception.CheckLastTimeException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -12,7 +14,6 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.Maps;
 import com.md.core.leafid.*;
-import com.md.core.leafid.snowflake.exception.CheckLastTimeException;
 
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFrameworkFactory;

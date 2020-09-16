@@ -27,7 +27,7 @@ public class SwaggerConfig {
 				.apiInfo(apiInfo()).select()
 				//如果不想将所有的接口都通过swagger管理的话，可以将RequestHandlerSelectors.any()修改为RequestHandlerSelectors.basePackage()
 				//.apis(RequestHandlerSelectors.any())
-				.apis(RequestHandlerSelectors.basePackage("com.md"))
+				.apis(RequestHandlerSelectors.basePackage("com.dream"))
 				.paths(PathSelectors.any())
 				.build();
 	}

@@ -30,7 +30,7 @@ public class CodeGenerator {
 	 * RUN THIS
 	 */
 	public static void main(String[] args) {
-		String basePackage = "com.md";
+		String basePackage = "com.dream";
 		String moduleName = "demo";
 		
 		AutoGenerator mpg = new AutoGenerator();

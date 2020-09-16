@@ -20,7 +20,7 @@ import com.dream.demo.util.ResultCode;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@RestControllerAdvice("com.md")
+@RestControllerAdvice("com.dream")
 public class GlobalExceptionHandler {
 
 	@ExceptionHandler(Exception.class)

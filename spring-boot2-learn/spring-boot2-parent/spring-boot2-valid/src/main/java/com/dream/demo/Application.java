@@ -18,7 +18,7 @@ import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrap
  */
 @SpringBootApplication
 @EnableSwaggerBootstrapUI
-@ComponentScan(basePackages = "com.md")
+@ComponentScan(basePackages = "com.dream")
 public class Application {
 
 	public static void main(String[] args) {

@@ -1,7 +1,7 @@
-package com.md.core.leafid.id;
+package com.dream.core.leafid.id;
 
-import com.md.core.leafid.Result;
-import com.md.core.leafid.Status;
+import com.dream.core.leafid.Result;
+import com.dream.core.leafid.Status;
 
 public class ZeroIDGen implements IDGen {
 	

@@ -33,7 +33,7 @@
 	<root level="INFO">
 		<appender-ref ref="STDOUT" />
 	</root>
-	<logger name="com.md" level="INFO">
+	<logger name="com.dream" level="INFO">
 		<appender-ref ref="baselog" />
 	</logger>
 </configuration>

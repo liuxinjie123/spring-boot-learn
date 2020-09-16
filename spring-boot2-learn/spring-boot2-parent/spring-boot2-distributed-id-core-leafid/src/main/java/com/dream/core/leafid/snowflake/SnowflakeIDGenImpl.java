@@ -1,15 +1,15 @@
-package com.md.core.leafid.snowflake;
+package com.dream.core.leafid.snowflake;
 
 import java.util.Random;
 
+import com.dream.core.leafid.util.NetUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Preconditions;
-import com.md.core.leafid.Result;
-import com.md.core.leafid.Status;
-import com.md.core.leafid.util.NetUtils;
-import com.md.core.leafid.id.IDGen;
+import com.dream.core.leafid.Result;
+import com.dream.core.leafid.Status;
+import com.dream.core.leafid.id.IDGen;
 
 public class SnowflakeIDGenImpl implements IDGen {
 

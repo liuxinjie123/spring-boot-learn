@@ -8,7 +8,7 @@ import org.springframework.boot.context.event.ApplicationPreparedEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.core.env.ConfigurableEnvironment;
 
-import com.md.core.leafid.MdIdsGen;
+import com.dream.core.leafid.MdIdsGen;
 
 /**
  * 监听器：项目初始化时调用类

@@ -44,7 +44,7 @@
 		<appender-ref ref="stdout" />
 	</root>
 	<!-- 定义日志输出的package包名 -->
-	<logger name="com.md" level="DEBUG">
+	<logger name="com.dream" level="DEBUG">
 		<appender-ref ref="async_file" />
 	</logger>
 </configuration>
