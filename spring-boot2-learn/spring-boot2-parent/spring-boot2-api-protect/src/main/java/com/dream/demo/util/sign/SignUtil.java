@@ -14,6 +14,8 @@ import java.util.TreeMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.dream.demo.util.ConstantUtils.API_SECRET_KEY;
+
 /**
  * 签名工具类
  */
@@ -95,10 +97,9 @@ public class SignUtil {
 
 	public static void main(String[] args) {
 		Map<String, Object> params = new HashMap<String, Object>();
-		params.put("name", "minbo");
-		params.put("age", 100);
-		String secretKey = "996";
-		String sign = SignUtil.signByMD5(params, secretKey);
+		params.put("name", "jack");
+		params.put("age", 20);
+		String sign = SignUtil.signByMD5(params, API_SECRET_KEY);
 		System.out.println(sign);
 	}
 }

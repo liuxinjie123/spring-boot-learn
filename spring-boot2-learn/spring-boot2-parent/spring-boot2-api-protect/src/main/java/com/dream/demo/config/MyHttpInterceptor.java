@@ -1,4 +1,4 @@
-package com.dream.demo;
+package com.dream.demo.config;
 
 import java.util.Map;
 
@@ -18,6 +18,7 @@ public class MyHttpInterceptor extends HandlerInterceptorAdapter {
 
 	protected static Logger logger = LoggerFactory.getLogger(MyHttpInterceptor.class);
 	
+	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		String url = request.getRequestURL().toString();

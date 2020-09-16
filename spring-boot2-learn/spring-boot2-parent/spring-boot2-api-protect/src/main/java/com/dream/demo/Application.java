@@ -19,8 +19,6 @@ public class Application {
 
 	/**
 	 * 开启过滤器功能
-	 * 
-	 * @return
 	 */
 	private CorsConfiguration buildConfig() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
@@ -32,8 +30,6 @@ public class Application {
 
 	/**
 	 * 跨域过滤器
-	 * 
-	 * @return
 	 */
 	@Bean
 	public CorsFilter corsFilter() {
