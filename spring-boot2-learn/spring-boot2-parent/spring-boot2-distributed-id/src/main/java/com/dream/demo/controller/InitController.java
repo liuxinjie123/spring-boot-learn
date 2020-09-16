@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.dream.core.leafid.MdIdsGen;
 
-
 @RestController
 public class InitController {
 
@@ -21,7 +20,6 @@ public class InitController {
 
     /**
      * 生成 id
-     * @return
      */
 	@GetMapping("/createId")
 	public BaseResponse getNewId() {
