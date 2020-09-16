@@ -23,7 +23,7 @@ public class HelloController {
 		return BaseResponse.error("exception，" + a);
 	}
 
-	@GetMapping("/error")
+	@GetMapping("/err")
 	public BaseResponse error() {
 		return BaseResponse.error(ResultCode.SUCCESS_FAIL, "error错误测试");
 	}
