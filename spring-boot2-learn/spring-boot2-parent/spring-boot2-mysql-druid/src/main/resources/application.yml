@@ -1,9 +1,9 @@
 spring:
    datasource:
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/cfdb?useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false
       username: root
-      password: a123456
+      password: 123456
       # 使用alibaba的druid连接池、监控
       type: com.alibaba.druid.pool.DruidDataSource
       druid:

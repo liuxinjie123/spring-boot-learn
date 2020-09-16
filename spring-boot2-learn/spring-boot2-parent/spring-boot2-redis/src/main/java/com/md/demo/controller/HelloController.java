@@ -1,5 +1,6 @@
 package com.md.demo.controller;
 
+import com.md.demo.util.BaseResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +17,7 @@ public class HelloController {
 	 * @return
 	 */
 	@GetMapping("/hello")
-	public String hello() {
-		return "Hello greetings from spring-boot2-redis";
+	public BaseResponse hello() {
+		return BaseResponse.success("Hello greetings from spring-boot2-redis");
 	}
 }
