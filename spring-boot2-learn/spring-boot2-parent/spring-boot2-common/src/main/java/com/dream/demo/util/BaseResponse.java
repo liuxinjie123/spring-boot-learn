@@ -26,6 +26,10 @@ public class BaseResponse {
 		return new BaseResponse(code);
 	}
 
+	public static BaseResponse error(String code, String msg) {
+		return new BaseResponse(code, msg);
+	}
+
 	public static BaseResponse error(String msg) {
 		return new BaseResponse(ResultCode.SYSTEM_ERROR.code, msg);
 	}

@@ -1,5 +1,6 @@
 package com.dream.demo.controller;
 
+import com.dream.demo.util.BaseResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,13 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.annotations.ApiOperation;
 
-/**
- * @author Minbo
- */
 @RestController
-public class Initcontroller {
+public class HelloController {
 
-	protected static Logger logger = LoggerFactory.getLogger(Initcontroller.class);
+	protected static Logger logger = LoggerFactory.getLogger(HelloController.class);
 
 	/**
 	 * http://localhost:9090/hello
@@ -21,15 +19,13 @@ public class Initcontroller {
 	 * @return
 	 */
 	@GetMapping("/hello")
-	public String hello() {
+	public BaseResponse hello() {
 		logger.info("hello");
-		return "Hello greetings from spring-boot2-valid";
+		return BaseResponse.success("Hello greetings from spring-boot2-valid");
 	}
 
 	/**
 	 * http://localhost:9090/exception
-	 * 
-	 * @return
 	 */
 	@ApiOperation(value = "异常测试", httpMethod = "GET")
 	@GetMapping("/exception")

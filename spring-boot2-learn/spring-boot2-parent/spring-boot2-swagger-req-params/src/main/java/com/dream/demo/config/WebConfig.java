@@ -9,8 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 /**
  * 拦截器定义
- * 
- * @author Minbo.He
  */
 @Configuration
 public class WebConfig extends WebMvcConfigurationSupport {
