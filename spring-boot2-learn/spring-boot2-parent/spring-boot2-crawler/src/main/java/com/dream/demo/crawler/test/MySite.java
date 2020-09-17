@@ -4,9 +4,6 @@ import us.codecraft.webmagic.Site;
 
 /**
  * 模拟请求头设置
- * 
- * @author Minbo
- *
  */
 public class MySite {
 

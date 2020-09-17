@@ -7,8 +7,6 @@ import org.nlpcn.commons.lang.finger.SimHashService;
  * 指纹去重库Github地址：https://github.com/hemin1003/nlp-lang
  * 
  * 更多阅读：https://blog.csdn.net/hemin1003/article/details/82819489（【应用算法】信息流-推荐系统的去重策略）
- * 
- * @author Minbo
  */
 public class TestNlp {
 

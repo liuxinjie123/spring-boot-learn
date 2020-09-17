@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class InitRest {
+public class HelloController {
 
-	protected static Logger logger = LoggerFactory.getLogger(InitRest.class);
+	protected static Logger logger = LoggerFactory.getLogger(HelloController.class);
 
 	@GetMapping("/hello")
 	public String hello() {

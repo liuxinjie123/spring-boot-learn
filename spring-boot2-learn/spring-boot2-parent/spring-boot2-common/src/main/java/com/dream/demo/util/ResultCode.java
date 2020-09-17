@@ -21,8 +21,6 @@ public enum ResultCode {
 	// 系统异常
 	SYSTEM_ERROR("111111", "网络异常，请稍后再试");
 
-    public static final ResultCode  = ;
-
     private ResultCode(String code, String msg) {
 		this.code = code;
 		this.msg = msg;

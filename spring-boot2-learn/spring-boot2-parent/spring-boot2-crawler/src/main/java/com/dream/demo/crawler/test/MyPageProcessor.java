@@ -14,10 +14,9 @@ import us.codecraft.webmagic.selector.JsonPathSelector;
 /**
  * 官方地址：http://webmagic.io/
  * 
- * WebMagic是一个简单灵活的Java爬虫框架。基于WebMagic，你可以快速开发出一个高效、易维护的爬虫。
- * 
- * @author Minbo
+ * WebMagic是一个简单灵活的Java爬虫框架。
  *
+ * 基于WebMagic，你可以快速开发出一个高效、易维护的爬虫。
  */
 @Slf4j
 public class MyPageProcessor implements PageProcessor {
@@ -26,7 +25,8 @@ public class MyPageProcessor implements PageProcessor {
 
 	@Override
 	public void process(Page page) {
-		// 这里使用了jsonPath，因为今日头条返回的是json数据格式。如果是html内容，则使用xpath
+		// 这里使用了jsonPath，因为今日头条返回的是json数据格式。
+		// 如果是html内容，则使用xpath
 
 		// 第一层解析
 		String json = page.getRawText();
@@ -62,6 +62,7 @@ public class MyPageProcessor implements PageProcessor {
 		}
 	}
 
+	@Override
 	public Site getSite() {
 		return MySite.getSit(site);
 	}

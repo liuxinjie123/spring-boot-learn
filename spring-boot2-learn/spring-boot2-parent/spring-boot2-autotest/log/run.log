@@ -1,71 +1,7 @@
-2020-09-03 16:28:45,522 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationJavaTest on hw20172462 with PID 11708 (started by 20172462 in E:\code\spring-boot-study\spring-boot2-study\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 16:28:45,524 [main] [com.md.demo.ApplicationJavaTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 16:28:45,527 [main] [com.md.demo.ApplicationJavaTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 16:28:46,417 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationJavaTest in 2.228 seconds (JVM running for 5.838)
-2020-09-03 16:28:46,858 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:39)- before
-2020-09-03 16:28:46,859 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:28)- test hello 1
-2020-09-03 16:28:46,861 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:44)- after
-2020-09-03 16:29:56,990 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationJavaTest on hw20172462 with PID 15012 (started by 20172462 in E:\code\spring-boot-study\spring-boot2-study\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 16:29:56,991 [main] [com.md.demo.ApplicationJavaTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 16:29:56,994 [main] [com.md.demo.ApplicationJavaTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 16:29:57,592 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationJavaTest in 1.764 seconds (JVM running for 4.683)
-2020-09-03 16:29:58,653 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:41)- before, currentTime:2020-09-03T16:29:58.653
-2020-09-03 16:29:58,654 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:30)- test hello 1
-2020-09-03 16:29:58,659 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:46)- after, currentTime:2020-09-03T16:29:58.658
-2020-09-03 16:57:58,138 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationJavaTest on hw20172462 with PID 13244 (started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 16:57:58,165 [main] [com.md.demo.ApplicationJavaTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 16:57:58,168 [main] [com.md.demo.ApplicationJavaTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 16:57:58,797 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationJavaTest in 1.66 seconds (JVM running for 5.05)
-2020-09-03 16:57:59,854 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:41)- before, currentTime:2020-09-03T16:57:59.854
-2020-09-03 16:57:59,855 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:30)- test hello 1
-2020-09-03 16:57:59,857 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:46)- after, currentTime:2020-09-03T16:57:59.857
-2020-09-03 16:58:45,268 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationJavaTest on hw20172462 with PID 10824 (started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 16:58:45,269 [main] [com.md.demo.ApplicationJavaTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 16:58:45,272 [main] [com.md.demo.ApplicationJavaTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 16:58:45,958 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationJavaTest in 1.597 seconds (JVM running for 4.864)
-2020-09-03 16:58:46,909 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:38)- before, currentTime:2020-09-03T16:58:46.909.
-2020-09-03 16:58:46,910 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:27)- test hello 1
-2020-09-03 16:58:46,912 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:43)- after, currentTime:2020-09-03T16:58:46.912.
-2020-09-03 16:59:13,767 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationJavaTest on hw20172462 with PID 18140 (started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 16:59:13,770 [main] [com.md.demo.ApplicationJavaTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 16:59:13,773 [main] [com.md.demo.ApplicationJavaTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 16:59:14,582 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationJavaTest in 1.973 seconds (JVM running for 4.84)
-2020-09-03 16:59:15,339 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:38)- before, 2020-09-03T16:59:15.339.
-2020-09-03 16:59:15,339 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:27)- test hello 1
-2020-09-03 16:59:15,341 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:43)- after, 2020-09-03T16:59:15.341.
-2020-09-03 16:59:15,352 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:38)- before, 2020-09-03T16:59:15.352.
-2020-09-03 16:59:15,352 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:32)- test hello 2
-2020-09-03 16:59:15,355 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:43)- after, 2020-09-03T16:59:15.355.
-2020-09-03 16:59:37,918 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationJavaTest on hw20172462 with PID 18316 (started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 16:59:37,920 [main] [com.md.demo.ApplicationJavaTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 16:59:37,925 [main] [com.md.demo.ApplicationJavaTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 16:59:38,680 [main] [com.md.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationJavaTest in 2.083 seconds (JVM running for 5.29)
-2020-09-03 16:59:39,160 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:38)- before, 2020-09-03T16:59:39.160.
-2020-09-03 16:59:39,161 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:32)- test hello 2
-2020-09-03 16:59:39,167 [main] [com.md.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:43)- after, 2020-09-03T16:59:39.167.
-2020-09-03 17:03:34,952 [main] [com.md.demo.ApplicationMockTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationMockTest on hw20172462 with PID 17152 (started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 17:03:34,954 [main] [com.md.demo.ApplicationMockTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 17:03:34,957 [main] [com.md.demo.ApplicationMockTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 17:03:38,001 [main] [com.md.demo.ApplicationMockTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationMockTest in 4.018 seconds (JVM running for 7.103)
-2020-09-03 17:03:38,183 [main] [com.md.demo.ApplicationMockTest] [INFO] (ApplicationMockTest.java:44)- 测试前，打印...
-2020-09-03 17:03:38,309 [main] [com.md.demo.ApplicationMockTest] [INFO] (ApplicationMockTest.java:64)- 返回状态码status=200
-2020-09-03 17:03:38,309 [main] [com.md.demo.ApplicationMockTest] [INFO] (ApplicationMockTest.java:67)- 返回结果数据content=Hello，greetings from sprint-boot2-autotest
-2020-09-03 17:03:38,312 [main] [com.md.demo.ApplicationMockTest] [INFO] (ApplicationMockTest.java:49)- 测试后，打印...
-2020-09-03 17:04:06,154 [main] [com.md.demo.ApplicationMockTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationMockTest on hw20172462 with PID 7256 (started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 17:04:06,154 [main] [com.md.demo.ApplicationMockTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 17:04:06,158 [main] [com.md.demo.ApplicationMockTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 17:04:08,897 [main] [com.md.demo.ApplicationMockTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationMockTest in 4.469 seconds (JVM running for 7.774)
-2020-09-03 17:04:09,123 [main] [com.md.demo.ApplicationMockTest] [INFO] (ApplicationMockTest.java:44)- 测试前，打印...
-2020-09-03 17:04:09,243 [main] [com.md.demo.ApplicationMockTest] [INFO] (ApplicationMockTest.java:49)- 测试后，打印...
-2020-09-03 17:05:08,384 [main] [com.md.demo.ApplicationWebApiTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationWebApiTest on hw20172462 with PID 4556 (started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 17:05:08,386 [main] [com.md.demo.ApplicationWebApiTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 17:05:08,395 [main] [com.md.demo.ApplicationWebApiTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 17:05:13,902 [main] [com.md.demo.ApplicationWebApiTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationWebApiTest in 6.545 seconds (JVM running for 9.539)
-2020-09-03 17:05:14,098 [main] [com.md.demo.ApplicationWebApiTest] [INFO] (ApplicationWebApiTest.java:45)- 随机自动分配端口后的整体请求头--->>> http://localhost:61797/
-2020-09-03 17:05:14,099 [main] [com.md.demo.ApplicationWebApiTest] [INFO] (ApplicationWebApiTest.java:57)- 待测试接口地址：url=http://localhost:61797//hello
-2020-09-03 17:05:14,425 [main] [com.md.demo.ApplicationWebApiTest] [INFO] (ApplicationWebApiTest.java:60)- 返回结果：result=Hello，greetings from sprint-boot2-autotest
-2020-09-03 17:06:25,224 [main] [com.md.demo.ApplicationWebServiceTest] [INFO] (StartupInfoLogger.java:50)- Starting ApplicationWebServiceTest on hw20172462 with PID 13452 (started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-autotest)
-2020-09-03 17:06:25,225 [main] [com.md.demo.ApplicationWebServiceTest] [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
-2020-09-03 17:06:25,228 [main] [com.md.demo.ApplicationWebServiceTest] [INFO] (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2020-09-03 17:06:28,145 [main] [com.md.demo.ApplicationWebServiceTest] [INFO] (StartupInfoLogger.java:59)- Started ApplicationWebServiceTest in 3.842 seconds (JVM running for 7.057)
-2020-09-03 17:06:28,336 [main] [com.md.demo.ApplicationWebServiceTest] [INFO] (ApplicationWebServiceTest.java:34)- 实际返回结果result=hello from service layer
+2020-09-17 16:22:28,146 [main] [com.dream.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:55)- Starting ApplicationJavaTest on hw20172462 with PID 21700 (started by 20172462 in E:\code\spring-boot-learn\spring-boot2-learn\spring-boot2-parent\spring-boot2-autotest)
+2020-09-17 16:22:28,170 [main] [com.dream.demo.ApplicationJavaTest] [DEBUG] (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-17 16:22:28,171 [main] [com.dream.demo.ApplicationJavaTest] [INFO] (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-17 16:22:28,757 [main] [com.dream.demo.ApplicationJavaTest] [INFO] (StartupInfoLogger.java:61)- Started ApplicationJavaTest in 1.626 seconds (JVM running for 6.923)
+2020-09-17 16:22:30,076 [main] [com.dream.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:38)- before, 2020-09-17T16:22:30.076.
+2020-09-17 16:22:30,080 [main] [com.dream.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:27)- test hello 1
+2020-09-17 16:22:30,083 [main] [com.dream.demo.ApplicationJavaTest] [INFO] (ApplicationJavaTest.java:43)- after, 2020-09-17T16:22:30.083.
