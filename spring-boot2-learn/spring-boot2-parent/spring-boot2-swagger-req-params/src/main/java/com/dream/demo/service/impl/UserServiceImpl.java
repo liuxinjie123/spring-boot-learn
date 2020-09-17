@@ -18,9 +18,9 @@ public class UserServiceImpl implements IUserService {
 		// 模拟数据
 		UserVO obj = new UserVO();
 		obj.setUserId(dto.getId());
-		obj.setNickName("Minbo");
-		obj.setBlogUrl("https://hemin.blog.csdn.net/");
-		obj.setWechat("hemin_it");
+		obj.setNickName("hello");
+		obj.setBlogUrl("http://www.baidu.com");
+		obj.setWechat("wechat");
 
 		log.info("获取成功，dto={}，返回数据obj={}", JSON.toJSONString(dto), JSON.toJSONString(obj));
 		return obj;

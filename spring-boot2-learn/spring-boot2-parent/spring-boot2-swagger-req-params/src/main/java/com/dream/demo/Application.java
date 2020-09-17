@@ -7,9 +7,6 @@ import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrap
 
 /**
  * 程序主入口
- * 
- * @author Minbo
- *
  */
 @SpringBootApplication
 @EnableSwaggerBootstrapUI
@@ -18,4 +15,5 @@ public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
+
 }

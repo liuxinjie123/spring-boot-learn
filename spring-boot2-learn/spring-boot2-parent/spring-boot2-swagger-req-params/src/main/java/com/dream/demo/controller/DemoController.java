@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.dream.demo.dto.GetByIdDTO;
 import com.dream.demo.service.IUserService;
-import com.dream.demo.util.BaseController;
 import com.dream.demo.util.JsonResult;
 import com.dream.demo.vo.UserVO;
 
@@ -22,9 +21,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author Minbo
- */
 @RestController
 @RequestMapping("/demo")
 @Api(tags = { "接口-演示" })

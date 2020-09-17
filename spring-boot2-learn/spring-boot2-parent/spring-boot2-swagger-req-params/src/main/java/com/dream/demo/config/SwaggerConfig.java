@@ -1,4 +1,4 @@
-package com.dream.demo;
+package com.dream.demo.config;
 
 import java.util.ArrayList;
 import java.util.List;

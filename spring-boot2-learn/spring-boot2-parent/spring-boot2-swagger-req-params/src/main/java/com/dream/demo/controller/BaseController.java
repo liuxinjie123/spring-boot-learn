@@ -1,15 +1,14 @@
-package com.dream.demo.util;
+package com.dream.demo.controller;
 
 import java.util.List;
 
+import com.dream.demo.util.CodeEnums;
+import com.dream.demo.util.JsonResult;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 
 /**
  * 基类
- * 
- * @author Minbo
- *
  */
 public class BaseController {
 

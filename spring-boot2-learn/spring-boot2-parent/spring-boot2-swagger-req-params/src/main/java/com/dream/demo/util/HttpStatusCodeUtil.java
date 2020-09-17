@@ -6,9 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * http响应码工具类
- * 
- * @author Minbo
- *
  */
 @Slf4j
 public class HttpStatusCodeUtil {

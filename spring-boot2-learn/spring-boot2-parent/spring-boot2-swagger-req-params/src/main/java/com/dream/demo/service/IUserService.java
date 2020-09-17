@@ -5,9 +5,6 @@ import com.dream.demo.vo.UserVO;
 
 /**
  * 用户信息中心
- * 
- * @author Minbo
- *
  */
 public interface IUserService {
 
