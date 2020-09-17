@@ -1,2 +1,0 @@
-2020-09-16 10:26:46,766 [http-nio-9090-exec-1] [com.md.demo.MyHttpInterceptor] [INFO] (MyHttpInterceptor.java:37)- 请求参数, url: http://localhost:9090/hello, method: GET, params: null
-2020-09-16 10:31:59,698 [http-nio-9090-exec-3] [com.md.demo.MyHttpInterceptor] [INFO] (MyHttpInterceptor.java:37)- 请求参数, url: http://localhost:9090/error, method: GET, params: null
