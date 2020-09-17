@@ -1,7 +1,7 @@
 package com.dream.demo.leafid.snowflake;
 
-import com.dream.demo.leafid.PropertyFactory;
-import com.dream.demo.leafid.snowflake.exception.CheckLastTimeException;
+import com.dream.demo.leafid.LeafPropertyFactory;
+import com.dream.demo.leafid.exception.CheckLastTimeException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -42,10 +42,10 @@ public class SnowflakeZookeeperHolder {
 	private int workerID;
 
 	private static final String PREFIX_ZK_PATH = "/snowflake/"
-			+ PropertyFactory.getProperties().getProperty("leaf.name");
+			+ LeafPropertyFactory.getProperties().getProperty("leaf.name");
 
 	private static final String PROP_PATH = System.getProperty("java.io.tmpdir") + File.separator
-			+ PropertyFactory.getProperties().getProperty("leaf.name") + "/leafconf/{port}/workerID.properties";
+			+ LeafPropertyFactory.getProperties().getProperty("leaf.name") + "/leafconf/{port}/workerID.properties";
 
 	// 保存所有数据持久的节点
 	private static final String PATH_FOREVER = PREFIX_ZK_PATH + "/forever";

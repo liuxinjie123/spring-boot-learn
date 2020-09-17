@@ -32,7 +32,6 @@ public class MyApplicationPreparedEvent implements ApplicationListener<Applicati
 			String port = environment.getProperty("server.port");
 			String zkAddress = environment.getProperty("leaf.zk.list");
 			MdIdsGen.init(zkAddress, ip, port);
-
 		} catch (Exception e) {
 			logger.error("初始化分布式id生成器，异常：" + e.getMessage(), e);
 			System.exit(0);

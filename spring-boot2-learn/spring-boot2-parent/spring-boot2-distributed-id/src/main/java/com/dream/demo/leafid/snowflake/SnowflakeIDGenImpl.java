@@ -2,17 +2,13 @@ package com.dream.demo.leafid.snowflake;
 
 import java.util.Random;
 
-
 import com.dream.demo.leafid.Result;
 import com.dream.demo.leafid.Status;
 import com.dream.demo.leafid.id.IDGen;
-import com.dream.demo.util.NetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Preconditions;
-
-import javax.servlet.http.HttpServletRequest;
 
 public class SnowflakeIDGenImpl implements IDGen {
 
@@ -37,9 +33,9 @@ public class SnowflakeIDGenImpl implements IDGen {
 	private static final Random RANDOM = new Random();
 	private int port;
 
-	public SnowflakeIDGenImpl(HttpServletRequest request, String zkAddress, int port) {
+	public SnowflakeIDGenImpl(String ip, String zkAddress, int port) {
 		this.port = port;
-		SnowflakeZookeeperHolder holder = new SnowflakeZookeeperHolder(NetUtil.getIp(request), String.valueOf(port), zkAddress);
+		SnowflakeZookeeperHolder holder = new SnowflakeZookeeperHolder(ip, String.valueOf(port), zkAddress);
 		initFlag = holder.init();
 		if (initFlag) {
 			workerId = holder.getWorkerID();

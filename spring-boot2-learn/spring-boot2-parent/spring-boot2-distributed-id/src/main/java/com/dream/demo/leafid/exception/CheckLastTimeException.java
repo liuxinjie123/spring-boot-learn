@@ -1,4 +1,4 @@
-package com.dream.demo.leafid.snowflake.exception;
+package com.dream.demo.leafid.exception;
 
 /**
  * @author 20172462

@@ -1,4 +1,4 @@
-package com.dream.demo.leafid.snowflake.exception;
+package com.dream.demo.leafid.exception;
 
 public class ClockGoBackException extends RuntimeException {
 	private static final long serialVersionUID = -2021330616975162738L;

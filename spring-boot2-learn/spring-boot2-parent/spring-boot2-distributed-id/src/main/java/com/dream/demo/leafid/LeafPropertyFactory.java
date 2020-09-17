@@ -9,13 +9,13 @@ import java.util.Properties;
 /**
  * @author 20172462
  */
-public class PropertyFactory {
-    private static final Logger logger = LoggerFactory.getLogger(PropertyFactory.class);
+public class LeafPropertyFactory {
+    private static final Logger logger = LoggerFactory.getLogger(LeafPropertyFactory.class);
     private static final Properties prop = new Properties();
 
     static {
         try {
-            prop.load(PropertyFactory.class.getClassLoader().getResourceAsStream("leaf.properties"));
+            prop.load(LeafPropertyFactory.class.getClassLoader().getResourceAsStream("leaf.properties"));
         } catch (IOException e) {
             logger.warn("Load Properties Ex", e);
         }

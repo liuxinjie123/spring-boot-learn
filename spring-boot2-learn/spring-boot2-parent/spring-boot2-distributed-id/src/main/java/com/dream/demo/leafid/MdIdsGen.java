@@ -1,7 +1,7 @@
 package com.dream.demo.leafid;
 
-import com.dream.core.leafid.id.IDGen;
-import com.dream.core.leafid.snowflake.SnowflakeIDGenImpl;
+import com.dream.demo.leafid.id.IDGen;
+import com.dream.demo.leafid.snowflake.SnowflakeIDGenImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,7 +36,7 @@ public class MdIdsGen {
 			logger.info("初始化：分布式id生成器");
 			logger.info("参数值：zkAddress=" + zkAddress + "，sIp=" + sIp + "，sPort=" + sPort);
 
-			idGen = new SnowflakeIDGenImpl(zkAddress, Integer.valueOf(port));
+			idGen = new SnowflakeIDGenImpl(ip, zkAddress, Integer.valueOf(port));
 			Long idLong = getId();
 			if (idLong == null || idLong < 0) {
 				logger.error("分布式id生成器初始化【异常】：id值为空或小于0，【id=" + idLong + "】", new RuntimeException("valueError"));
