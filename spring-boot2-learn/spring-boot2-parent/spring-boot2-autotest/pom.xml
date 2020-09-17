@@ -10,10 +10,10 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>sprint-boot2-autotest</artifactId>
+	<artifactId>spring-boot2-autotest</artifactId>
 	<packaging>jar</packaging>
 
-	<name>sprint-boot2-autotest</name>
+	<name>spring-boot2-autotest</name>
 	<description>Spring Boot, MVC, Rest API for App</description>
 
 	<properties>
