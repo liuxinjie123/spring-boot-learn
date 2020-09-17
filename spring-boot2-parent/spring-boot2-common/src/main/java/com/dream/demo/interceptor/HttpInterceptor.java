@@ -12,7 +12,6 @@ import java.util.Map;
 /**
  * 拦截处理类
  */
-@Component
 public class HttpInterceptor extends HandlerInterceptorAdapter {
 
 	protected static Logger logger = LoggerFactory.getLogger(HttpInterceptor.class);

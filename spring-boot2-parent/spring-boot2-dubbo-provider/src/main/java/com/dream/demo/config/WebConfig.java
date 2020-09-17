@@ -1,5 +1,6 @@
-package com.dream.demo;
+package com.dream.demo.config;
 
+import com.dream.demo.interceptor.MyHttpInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;

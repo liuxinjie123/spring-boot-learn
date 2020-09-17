@@ -21,6 +21,6 @@
 	<dubbo:service interface="com.dream.demo.service.DemoService" ref="demoService" timeout="10000" />
 
 	<!-- 和本地 bean 一样实现服务 -->
-	<bean id="demoService" class="com.dream.demo.service.DemoServiceImpl" />
+	<bean id="demoService" class="com.dream.demo.service.impl.DemoServiceImpl" />
 
 </beans>
