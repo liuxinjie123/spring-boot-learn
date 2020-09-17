@@ -1,5 +1,6 @@
-package com.dream.demo.util.sign;
+package com.dream.demo.util;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
@@ -7,17 +8,15 @@ import java.net.UnknownHostException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.servlet.http.HttpServletRequest;
-
-public class NetworkUtil {
+public class NetUtil {
 
 	/**
 	 * 获取用户真实IP地址
-	 * 
+	 *
 	 * @param request
-	 * @return
+	 * @return ip
 	 */
-	public static String getIpAddress(HttpServletRequest request) {
+	public static String getIp(HttpServletRequest request) {
 		String ip = request.getHeader("x-forwarded-for");
 		if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
 			ip = request.getHeader("Proxy-Client-IP");
@@ -40,86 +39,101 @@ public class NetworkUtil {
 
 	/**
 	 * 获取来访者的浏览器版本
-	 * 
+	 *
 	 * @param request
-	 * @return
+	 * @return 浏览器版本
 	 */
-	public static String getRequestBrowserInfo(HttpServletRequest request) {
-		String browserVersion = null;
+	public static String getBrowserInfo(HttpServletRequest request) {
 		String header = request.getHeader("user-agent");
 		if (header == null || header.equals("")) {
 			return "";
 		}
 		if (header.indexOf("MSIE") > 0) {
-			browserVersion = "IE";
-		} else if (header.indexOf("Firefox") > 0) {
-			browserVersion = "Firefox";
-		} else if (header.indexOf("Chrome") > 0) {
-			browserVersion = "Chrome";
-		} else if (header.indexOf("Safari") > 0) {
-			browserVersion = "Safari";
-		} else if (header.indexOf("Camino") > 0) {
-			browserVersion = "Camino";
-		} else if (header.indexOf("Konqueror") > 0) {
-			browserVersion = "Konqueror";
+			return "IE";
 		}
-		return browserVersion;
+		if (header.indexOf("Firefox") > 0) {
+			return "Firefox";
+		}
+		if (header.indexOf("Chrome") > 0) {
+			return "Chrome";
+		}
+		if (header.indexOf("Safari") > 0) {
+			return "Safari";
+		}
+		if (header.indexOf("Camino") > 0) {
+			return "Camino";
+		}
+		if (header.indexOf("Konqueror") > 0) {
+			return "Konqueror";
+		}
+		return "";
 	}
 
 	/**
 	 * 获取系统版本信息
-	 * 
+	 *
 	 * @param request
-	 * @return
+	 * @return 系统信息
 	 */
-	public static String getRequestSystemInfo(HttpServletRequest request) {
-		String systenInfo = null;
+	public static String getSystemInfo(HttpServletRequest request) {
 		String header = request.getHeader("user-agent");
 		if (header == null || header.equals("")) {
 			return "";
 		}
 		// 得到用户的操作系统
 		if (header.indexOf("NT 6.0") > 0) {
-			systenInfo = "Windows Vista/Server 2008";
-		} else if (header.indexOf("NT 5.2") > 0) {
-			systenInfo = "Windows Server 2003";
-		} else if (header.indexOf("NT 5.1") > 0) {
-			systenInfo = "Windows XP";
-		} else if (header.indexOf("NT 6.0") > 0) {
-			systenInfo = "Windows Vista";
-		} else if (header.indexOf("NT 6.1") > 0) {
-			systenInfo = "Windows 7";
-		} else if (header.indexOf("NT 6.2") > 0) {
-			systenInfo = "Windows Slate";
-		} else if (header.indexOf("NT 6.3") > 0) {
-			systenInfo = "Windows 9";
-		} else if (header.indexOf("NT 5") > 0) {
-			systenInfo = "Windows 2000";
-		} else if (header.indexOf("NT 4") > 0) {
-			systenInfo = "Windows NT4";
-		} else if (header.indexOf("Me") > 0) {
-			systenInfo = "Windows Me";
-		} else if (header.indexOf("98") > 0) {
-			systenInfo = "Windows 98";
-		} else if (header.indexOf("95") > 0) {
-			systenInfo = "Windows 95";
-		} else if (header.indexOf("Mac") > 0) {
-			systenInfo = "Mac";
-		} else if (header.indexOf("Unix") > 0) {
-			systenInfo = "UNIX";
-		} else if (header.indexOf("Linux") > 0) {
-			systenInfo = "Linux";
-		} else if (header.indexOf("SunOS") > 0) {
-			systenInfo = "SunOS";
+			return "Windows Vista/Server 2008";
 		}
-		return systenInfo == null ? header : systenInfo;
+		if (header.indexOf("NT 5.2") > 0) {
+			return "Windows Server 2003";
+		}
+		if (header.indexOf("NT 5.1") > 0) {
+			return "Windows XP";
+		}
+		if (header.indexOf("NT 6.1") > 0) {
+			return "Windows 7";
+		}
+		if (header.indexOf("NT 6.2") > 0) {
+			return "Windows Slate";
+		}
+		if (header.indexOf("NT 6.3") > 0) {
+			return "Windows 9";
+		}
+		if (header.indexOf("NT 5") > 0) {
+			return "Windows 2000";
+		}
+		if (header.indexOf("NT 4") > 0) {
+			return "Windows NT4";
+		}
+		if (header.indexOf("Me") > 0) {
+			return "Windows Me";
+		}
+		if (header.indexOf("98") > 0) {
+			return "Windows 98";
+		}
+		if (header.indexOf("95") > 0) {
+			return "Windows 95";
+		}
+		if (header.indexOf("Mac") > 0) {
+			return "Mac";
+		}
+		if (header.indexOf("Unix") > 0) {
+			return "UNIX";
+		}
+		if (header.indexOf("Linux") > 0) {
+			return "Linux";
+		}
+		if (header.indexOf("SunOS") > 0) {
+			return "SunOS";
+		}
+		return header;
 	}
 
 	/**
 	 * 获取来访者的主机名称
-	 * 
+	 *
 	 * @param ip
-	 * @return
+	 * @return hostname
 	 */
 	public static String getHostName(String ip) {
 		InetAddress inet;
@@ -134,7 +148,7 @@ public class NetworkUtil {
 
 	/**
 	 * 命令获取mac地址
-	 * 
+	 *
 	 * @param cmd
 	 * @return
 	 */
@@ -225,7 +239,7 @@ public class NetworkUtil {
 
 	/**
 	 * 获取MAC地址
-	 * 
+	 *
 	 * @return 返回MAC地址
 	 */
 	public static String getMacAddress(String ip) {

@@ -1,22 +1,14 @@
 package com.dream.demo.util;
 
+import org.apache.commons.lang.time.DateUtils;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Random;
-
-import org.apache.commons.lang.time.DateUtils;
+import java.util.*;
 
 /**
  * 日期工具类
- */
-/**
- * @author CJS
- *
  */
 public final class DateUtil {
 

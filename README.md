@@ -9,15 +9,14 @@
 
 ### 新子项目列表
 
- [一、sprint-boot2-autotest](https://github.com/hemin1003/spring-boot-learn/tree/master/spring-boot2-learn/spring-boot2-parent/spring-boot2-autotest)
-
+ [一、sprint-boot2-autotest]
 介绍Springboot2【自动化单元测试】的用法：
 
 1. 如何编写测试案例，具体用法有哪些
 2. 单元测试场景：四种业务场景，例如如何进行接口api测试，服务层代码测试，MockMvc用法等
 
 
-[二、spring-boot2-interceptor](https://github.com/hemin1003/spring-boot-learn/tree/master/spring-boot2-learn/spring-boot2-parent/spring-boot2-interceptor)
+[二、spring-boot2-interceptor]
 
 介绍Springboot2【拦截器】的用法：
 
@@ -247,7 +246,6 @@
 <br/>
 <br/>
 
-## 当前项目中包含的内容已是旧内容了，后续不再更新，知悉
 
 项目工具使用的是Eclipse mars+maven3+jdk1.8
 

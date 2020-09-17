@@ -1,5 +1,6 @@
-package com.dream.demo;
+package com.dream.demo.config;
 
+import com.dream.demo.interceptor.HttpInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -8,8 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 /**
  * 拦截器定义
- * 
- * @author Minbo.He
  */
 @Configuration
 public class WebConfig extends WebMvcConfigurationSupport {
@@ -17,7 +16,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
 	// 让bean提前加载，让拦截器中的@Autowired生效
 	@Bean
 	public HandlerInterceptor getMyInterceptor() {
-		return new MyHttpInterceptor();
+		return new HttpInterceptor();
 	}
 
 	/**

@@ -75,6 +75,7 @@ public class SignUtil {
 		List<Map.Entry<String, Object>> infoIds = new ArrayList<Map.Entry<String, Object>>(map.entrySet());
 		// 排序
 		Collections.sort(infoIds, new Comparator<Map.Entry<String, Object>>() {
+			@Override
 			public int compare(Map.Entry<String, Object> o1, Map.Entry<String, Object> o2) {
 				// 按首字母比对
 				return (String.valueOf(o1.getKey().charAt(0))).compareTo(String.valueOf(o2.getKey().charAt(0)));

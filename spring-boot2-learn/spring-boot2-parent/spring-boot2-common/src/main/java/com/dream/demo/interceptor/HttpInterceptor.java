@@ -1,25 +1,23 @@
-package com.dream.demo;
-
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+package com.dream.demo.interceptor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Map;
+
 /**
  * 拦截处理类
- * 
- * @author Minbo.He
  */
 @Component
-public class MyHttpInterceptor extends HandlerInterceptorAdapter {
+public class HttpInterceptor extends HandlerInterceptorAdapter {
 
-	protected static Logger logger = LoggerFactory.getLogger(MyHttpInterceptor.class);
+	protected static Logger logger = LoggerFactory.getLogger(HttpInterceptor.class);
 	
+	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		String url = request.getRequestURL().toString();

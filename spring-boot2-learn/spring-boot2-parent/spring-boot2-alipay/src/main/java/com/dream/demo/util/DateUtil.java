@@ -542,7 +542,7 @@ public final class DateUtil {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		return new Date().getTime() / 1000;
+		return System.currentTimeMillis() / 1000;
 	}
 
 	/**

@@ -1,10 +1,9 @@
 package com.dream.demo.util;
 
+import javax.servlet.http.HttpServletRequest;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import javax.servlet.http.HttpServletRequest;
 
 
 /**
@@ -272,8 +271,7 @@ public class StrUtil {
 	 * @author xiajia
 	 * @return
 	 */
-	public static String encodeFileName(HttpServletRequest request,
-			String fileName) {
+	public static String encodeFileName(HttpServletRequest request, String fileName) {
 //		String agent = request.getHeader("USER-AGENT");
 //		try {
 //			if (null != agent && -1 != agent.indexOf("MSIE")) {

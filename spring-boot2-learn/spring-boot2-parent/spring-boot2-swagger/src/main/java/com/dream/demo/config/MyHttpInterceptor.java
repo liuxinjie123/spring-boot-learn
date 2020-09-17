@@ -5,6 +5,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.dream.demo.interceptor.HttpInterceptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -16,7 +17,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 @Component
 public class MyHttpInterceptor extends HandlerInterceptorAdapter {
 
-	protected static Logger logger = LoggerFactory.getLogger(MyHttpInterceptor.class);
+	protected static Logger logger = LoggerFactory.getLogger(HttpInterceptor.class);
 
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {

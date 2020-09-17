@@ -1,4 +1,4 @@
-package com.dream.demo;
+package com.dream.demo.config;
 
 import java.util.concurrent.Executors;
 
@@ -8,8 +8,6 @@ import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 
 /**
  * 多线程实现并发定时
- * 
- * @author Minbo
  */
 @Configuration
 public class ScheduleConfig implements SchedulingConfigurer {
