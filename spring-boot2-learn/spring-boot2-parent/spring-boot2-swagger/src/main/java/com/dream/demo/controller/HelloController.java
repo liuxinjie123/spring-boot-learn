@@ -1,7 +1,6 @@
 package com.dream.demo.controller;
 
-import com.dream.demo.util.JsonResult;
-import com.dream.demo.util.ResultCode;
+import com.dream.demo.util.BaseResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,32 +9,24 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 
-/**
- * @author Minbo
- */
 @RestController
-public class InitRest {
+public class HelloController {
 
-	protected static Logger logger = LoggerFactory.getLogger(InitRest.class);
+	protected static Logger logger = LoggerFactory.getLogger(HelloController.class);
 
-	/**
-	 * http://localhost:9090/hello
-	 * 
-	 * @return
-	 */
 	@ApiOperation(value = "/hello 欢迎入口", httpMethod = "GET")
 	@RequestMapping(value = "/hello")
-	public String hello() {
+	public BaseResponse hello() {
 		logger.info("hello");
-		return "Hello greetings from spring-boot2-swagger";
+		return BaseResponse.success("Hello greetings from spring-boot2-swagger");
 	}
 
 	@ApiOperation(value = "/getUserName 根据用户id获得用户的姓名", notes = "id不能为空", httpMethod = "GET")
 	@ApiImplicitParam(dataType = "string", name = "userId", value = "用户id", required = true)
 	@RequestMapping(value = "/getUserName")
-	public JsonResult getUserName(String userId) {
+	public BaseResponse getUserName(String userId) {
 		String result = "hello " + userId + "，name=张三";
-		return new JsonResult(ResultCode.SUCCESS, result);
+		return BaseResponse.success(result);
 	}
 
 	/**

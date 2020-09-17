@@ -1,4 +1,4 @@
-package com.dream.demo;
+package com.dream.demo.config;
 
 import java.util.Map;
 
@@ -12,8 +12,6 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 /**
  * 拦截处理类
- * 
- * @author Minbo.He
  */
 @Component
 public class MyHttpInterceptor extends HandlerInterceptorAdapter {

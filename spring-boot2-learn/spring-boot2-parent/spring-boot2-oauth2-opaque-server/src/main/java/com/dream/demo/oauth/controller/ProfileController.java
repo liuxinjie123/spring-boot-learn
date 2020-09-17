@@ -1,4 +1,4 @@
-package com.dream.demo.oauth.rest;
+package com.dream.demo.oauth.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

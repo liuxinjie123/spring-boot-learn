@@ -1,4 +1,4 @@
-package com.dream.demo.oauth.rest;
+package com.dream.demo.oauth.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +14,7 @@ public class InitRest {
 	protected static Logger logger = LoggerFactory.getLogger(InitRest.class);
 
 	/**
-	 * http://localhost:9101/hello
+	 * http://localhost:9090/hello
 	 * 
 	 * 在ResourceServerConfiguration.java文件中，开启了忽略放行，不验证token
 	 * 
@@ -23,6 +23,6 @@ public class InitRest {
 	@GetMapping("/hello")
 	public String hello() {
 		logger.info("hello");
-		return "Hello greetings from spring-boot2-oauth2-opaque-resource";
+		return "Hello greetings from spring-boot2-oauth2-jwt-resource";
 	}
 }

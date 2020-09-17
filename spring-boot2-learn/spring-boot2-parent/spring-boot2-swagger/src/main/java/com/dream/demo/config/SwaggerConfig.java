@@ -1,4 +1,4 @@
-package com.dream.demo;
+package com.dream.demo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,6 +7,7 @@ import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -40,9 +41,9 @@ public class SwaggerConfig {
 				// 简介
 				.description("This a demo for Swagger2")
 				// 服务条款
-				.termsOfServiceUrl("https://blog.csdn.net/hemin1003")
+				.termsOfServiceUrl("")
 				// 作者个人信息
-				.contact("Minbo.He")
+				.contact(new Contact("jack", "", "jack@163.com"))
 				// 版本
 				.version("1.0").build();
 	}

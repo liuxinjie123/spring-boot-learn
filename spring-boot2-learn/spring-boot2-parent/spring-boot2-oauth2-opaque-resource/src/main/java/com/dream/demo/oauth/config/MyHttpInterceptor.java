@@ -1,4 +1,4 @@
-package com.dream.demo.oauth;
+package com.dream.demo.oauth.config;
 
 import java.util.Map;
 
@@ -12,14 +12,13 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 /**
  * 拦截处理类
- * 
- * @author Minbo.He
  */
 @Component
 public class MyHttpInterceptor extends HandlerInterceptorAdapter {
 
 	protected static Logger logger = LoggerFactory.getLogger(MyHttpInterceptor.class);
 	
+	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		String url = request.getRequestURL().toString();
