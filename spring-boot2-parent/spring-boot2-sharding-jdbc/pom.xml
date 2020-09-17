@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.dream</groupId>
 		<artifactId>spring-boot2-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
@@ -23,18 +23,11 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<groupId>com.dream</groupId>
+			<artifactId>spring-boot2-common</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
-		<!-- 构建成可运行的Web项目 -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.json-lib</groupId>
-			<artifactId>json-lib-ext-spring</artifactId>
-		</dependency>
+
 	</dependencies>
 	
 	<build>

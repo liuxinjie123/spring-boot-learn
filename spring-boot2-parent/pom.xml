@@ -19,7 +19,6 @@
 
 	<modules>
 		<module>spring-boot2-autotest</module>
-		<module>spring-boot2-interceptor</module>
 		<module>spring-boot2-rocketmq</module>
 		<module>spring-boot2-schedule</module>
 		<module>spring-boot2-tomcat</module>
@@ -32,13 +31,11 @@
 		<module>spring-boot2-dubbo-provider</module>
 		<module>spring-boot2-dubbo-consumer</module>
 		<module>spring-boot2-distributed-id</module>
-		<module>spring-boot2-distributed-id-core-leafid</module>
 		<module>spring-boot2-mysql-druid</module>
 
 		<module>spring-boot2-logback</module>
 		<module>spring-boot2-logback-elk</module>
 		<module>spring-boot2-logback-async</module>
-		<module>spring-boot2-exception</module>
 		<module>spring-boot2-api-protect</module>
 		<module>spring-boot2-distributed-lock</module>
 
@@ -48,7 +45,6 @@
 		<module>spring-boot2-oauth2-opaque-server</module>
 		<module>spring-boot2-oauth2-opaque-resource</module>
 		
-		<module>spring-boot2-swagger</module>
 		<module>spring-boot2-mybatis-plus</module>
 		<module>spring-boot2-sharding-jdbc</module>
 		
@@ -59,8 +55,7 @@
 		<module>spring-boot2-log-level</module>
 		<module>spring-boot2-wechat-pay</module>
 		<module>spring-boot2-alipay</module>
-		<module>spring-boot2-crawler</module>
-		
+
 		<module>spring-boot2-mybatis-plus-multi-datasource</module>
 		<module>spring-boot2-common</module>
 	</modules>

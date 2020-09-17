@@ -41,11 +41,6 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>net.sf.json-lib</groupId>
-			<artifactId>json-lib-ext-spring</artifactId>
-		</dependency>
-
 		<!-- swagger集成 -->
 		<dependency>
 			<groupId>io.springfox</groupId>
