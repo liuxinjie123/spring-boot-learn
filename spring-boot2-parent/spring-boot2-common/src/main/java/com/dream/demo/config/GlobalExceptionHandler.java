@@ -1,6 +1,8 @@
 package com.dream.demo.config;
 
+import com.dream.demo.exception.NotLoginException;
 import com.dream.demo.util.BaseResponse;
+import com.dream.demo.util.ResultCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -20,5 +22,10 @@ public class GlobalExceptionHandler {
 	public BaseResponse handleException(Exception e) {
 		logger.error("系统异常【全局异常】：" + e.getMessage(), e);
 		return BaseResponse.error(e.getMessage());
+	}
+
+	@ExceptionHandler(value = {NotLoginException.class})
+	public BaseResponse handleException(NotLoginException e) {
+		return BaseResponse.error(ResultCode.NOTLOGIN);
 	}
 }

@@ -1,6 +1,7 @@
 package com.dream.demo.interceptor;
 
 import com.alibaba.fastjson.JSON;
+import com.dream.demo.exception.NotLoginException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -44,6 +45,13 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
 			return true;
 		}
 
+		// 不做拦截
+		if (uri.contains("webjars") || uri.contains("/swagger") || uri.contains("/log")
+				|| uri.contains("/csrf") || uri.equals("/") || uri.equals("/error")) {
+			return true;
+		}
+
+
 		//实现注入，调用服务层方法代码
 //		logger.info("【实现注入】调用服务层方法代码：demoService.sayHello()=" + this.demoService.sayHello());
 
@@ -52,11 +60,7 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
 		if (userId != null) {
 			return true;
 		} else {
-			Map<String, String> result = new HashMap<>();
-			result.put("code", "4001");
-			result.put("msg", "参数错误");
-			this.output(response, JSON.toJSONString(result));
-			return false;
+			throw new NotLoginException();
 		}
 	}
 

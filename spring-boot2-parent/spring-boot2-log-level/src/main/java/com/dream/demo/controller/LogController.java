@@ -1,7 +1,7 @@
 package com.dream.demo.controller;
 
+import com.dream.demo.util.BaseResponse;
 import com.dream.demo.util.HttpRequestUtil;
-import com.dream.demo.util.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,9 +14,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author Minbo
- */
 @RestController
 @RequestMapping("/log")
 @Api(tags = { "接口-演示" })
@@ -28,14 +25,12 @@ public class LogController {
 
 	/**
 	 * http://localhost:9090/testLog
-	 * 
-	 * @return
 	 */
 	@GetMapping("/testLog")
-	public String testLog() {
+	public BaseResponse testLog() {
 		log.debug("this is debug log");
 		log.info("this is info log");
-		return "Hello greetings from spring-boot2-log-level";
+		return BaseResponse.success("Hello greetings from spring-boot2-log-level");
 	}
 
 	/**
@@ -45,12 +40,12 @@ public class LogController {
 	 */
 	@ApiOperation(value = "获得当前项目：日志输出级别", httpMethod = "GET")
 	@GetMapping("/getLogger")
-	public JsonResult getLogger() {
+	public BaseResponse getLogger() {
 		String port = this.environment.getProperty("local.server.port");
 		String url = "http://localhost:" + port + "/actuator/loggers/com.dream";
 		String result = HttpRequestUtil.sendGet(url);
 		log.info("当前项目：日志输出级别，url={}，result={}", url, result);
-		return JsonResult.ok(result);
+		return BaseResponse.success(result);
 	}
 
 	/**
@@ -60,12 +55,12 @@ public class LogController {
 	 */
 	@ApiOperation(value = "设置当前项目：日志输出级别（INFO/DEBUG）", httpMethod = "POST")
 	@PostMapping("/setLogger")
-	public JsonResult setLogger(@RequestHeader String logLevel) {
+	public BaseResponse setLogger(@RequestHeader String logLevel) {
 		String port = this.environment.getProperty("local.server.port");
 		String url = "http://localhost:" + port + "/actuator/loggers/com.dream";
 		String param = "{\"configuredLevel\":\"" + logLevel + "\"}";
 		String result = HttpRequestUtil.sendJsonPost(url, param);
 		log.info("设置当前项目：日志输出级别，url={}，param={}，result={}", url, param, result);
-		return JsonResult.ok();
+		return BaseResponse.success();
 	}
 }

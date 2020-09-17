@@ -1,5 +1,6 @@
 package com.dream.demo.controller;
 
+import com.dream.demo.util.BaseResponse;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,9 +16,9 @@ public class HelloController {
 	 */
 	@ApiOperation(value = "/hello 欢迎入口", httpMethod = "GET")
 	@RequestMapping(value = "/hello")
-	public String hello() {
+	public BaseResponse hello() {
 		log.info("hello");
-		return "Hello greetings from spring-boot2-log-level";
+		return BaseResponse.success("Hello greetings from spring-boot2-log-level");
 	}
 
 	/**

@@ -5,6 +5,8 @@ public enum ResultCode {
 	/** 成功 */
 	SUCCESS("200", "SUCCESS"),
 
+	NOTLOGIN("206", "请登录"),
+
 	/** 数据为空 */
 	SUCCESS_NO_DATA("201", "数据为空"),
 
