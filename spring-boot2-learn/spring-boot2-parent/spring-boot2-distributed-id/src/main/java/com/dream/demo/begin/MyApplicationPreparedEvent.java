@@ -2,13 +2,12 @@ package com.dream.demo.begin;
 
 import java.net.InetAddress;
 
+import com.dream.demo.leafid.MdIdsGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.event.ApplicationPreparedEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.core.env.ConfigurableEnvironment;
-
-import com.dream.core.leafid.MdIdsGen;
 
 /**
  * 监听器：项目初始化时调用类

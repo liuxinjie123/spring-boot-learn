@@ -86,8 +86,8 @@ public final class DateUtil {
 	 */
 	public static String buildRandomFileName() {
 		Calendar cal = Calendar.getInstance();
-		SimpleDateFormat sdfreplay = new SimpleDateFormat("yyyyMMddHHmmss");
-		String replytime = sdfreplay.format(cal.getTime());
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+		String replytime = dateFormat.format(cal.getTime());
 		return replytime + new Random().nextInt(1000);
 	}
 
@@ -538,7 +538,7 @@ public final class DateUtil {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		return new Date().getTime() / 1000;
+		return System.currentTimeMillis() / 1000;
 	}
 
 	/**
