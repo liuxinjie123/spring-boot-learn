@@ -21,10 +21,16 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<swagger.version>2.9.2</swagger.version>
-		<mybatisplus.version>3.2.0</mybatisplus.version>
+		<mybatisplus.version>3.3.2</mybatisplus.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.dream</groupId>
+			<artifactId>spring-boot2-common</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -37,14 +43,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>net.sf.json-lib</groupId>
-			<artifactId>json-lib-ext-spring</artifactId>
-		</dependency>
-
-		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.21</version>
 		</dependency>
 
 		<dependency>

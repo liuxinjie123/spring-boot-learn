@@ -2,7 +2,7 @@ package com.dream.demo.test.controller;
 
 import java.util.List;
 
-import com.dream.demo.util.JsonResult;
+import com.dream.demo.util.BaseResponse;
 import com.dream.demo.util.ResultCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,18 +28,18 @@ public class UserController {
 
 	@ApiOperation(value = "获得用户列表", notes = "", httpMethod = "GET")
 	@GetMapping
-	public JsonResult userList() {
+	public BaseResponse userList() {
 		// 框架自带的方法
 		List<User> list = this.userService.list(null);
-		return new JsonResult(ResultCode.SUCCESS, list);
+		return BaseResponse.success(list);
 	}
 
 	@ApiOperation(value = "根据用户名获得用户记录", notes = "名称不能为空", httpMethod = "GET")
 	@ApiImplicitParam(dataType = "string", name = "name", value = "用户名", required = true)
 	@RequestMapping(value = "/findByName")
-	public JsonResult getUserByName(@RequestParam(value = "name", required = true) String name) {
+	public BaseResponse findByName(@RequestParam(value = "name", required = true) String name) {
 		// 自定义的方法
 		User user = this.userService.findByName(name);
-		return new JsonResult(ResultCode.SUCCESS, user);
+		return BaseResponse.success(user);
 	}
 }

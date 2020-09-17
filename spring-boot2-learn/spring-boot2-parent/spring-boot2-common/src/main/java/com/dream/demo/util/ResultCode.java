@@ -3,7 +3,7 @@ package com.dream.demo.util;
 public enum ResultCode {
 
 	/** 成功 */
-	SUCCESS("200", "成功"),
+	SUCCESS("200", "SUCCESS"),
 
 	/** 数据为空 */
 	SUCCESS_NO_DATA("201", "数据为空"),
