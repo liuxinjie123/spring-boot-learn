@@ -10,9 +10,6 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * 程序主入口
- * 
- * @author Minbo
- *
  */
 @SpringBootApplication
 @EnableScheduling

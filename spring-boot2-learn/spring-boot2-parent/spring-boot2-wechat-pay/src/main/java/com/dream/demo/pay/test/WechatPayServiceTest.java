@@ -7,9 +7,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * 本地测试类
- * 
- * @author Minbo
- *
  */
 @Service
 public class WechatPayServiceTest {

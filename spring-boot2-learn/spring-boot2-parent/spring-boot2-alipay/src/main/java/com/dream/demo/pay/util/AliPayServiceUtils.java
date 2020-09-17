@@ -1,5 +1,6 @@
 package com.dream.demo.pay.util;
 
+import com.alibaba.fastjson.JSONObject;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
@@ -11,12 +12,9 @@ import com.dream.demo.util.StrUtil;
 import com.dream.demo.pay.utils.vo.PayWithdrawHis;
 
 import lombok.extern.slf4j.Slf4j;
-import net.sf.json.JSONObject;
 
 /**
  * 支付服务工具类
- * 
- * @author Minbo
  *
  */
 @Slf4j
@@ -53,8 +51,8 @@ public class AliPayServiceUtils {
 			String json = response.getBody();
 			log.info("打款操作结果json=" + json);
 
-			JSONObject obj = JSONObject.fromObject(json);
-			JSONObject objResp = JSONObject.fromObject(obj.get("alipay_fund_trans_toaccount_transfer_response"));
+			JSONObject obj = JSONObject.parseObject(json);
+			JSONObject objResp = obj.getJSONObject("alipay_fund_trans_toaccount_transfer_response");
 			if (StrUtil.null2Str(objResp.get("code")).equals("10000")) {
 				log.info("打款成功");
 				return 0;
@@ -105,8 +103,8 @@ public class AliPayServiceUtils {
 			String json = response.getBody();
 			log.info("查询打款结果json=" + json);
 
-			JSONObject obj = JSONObject.fromObject(json);
-			JSONObject objResp = JSONObject.fromObject(obj.get("alipay_fund_trans_order_query_response"));
+			JSONObject obj = JSONObject.parseObject(json);
+			JSONObject objResp = obj.getJSONObject("alipay_fund_trans_order_query_response");
 
 			if (StrUtil.null2Str(objResp.get("code")).equals("10000")
 					&& StrUtil.null2Str(objResp.get("msg")).equals("Success")) {

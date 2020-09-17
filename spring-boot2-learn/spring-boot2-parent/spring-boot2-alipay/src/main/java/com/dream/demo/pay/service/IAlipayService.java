@@ -2,8 +2,6 @@ package com.dream.demo.pay.service;
 
 /**
  * 支付宝自动打款
- * 
- * @author Minbo
  */
 public interface IAlipayService {
 

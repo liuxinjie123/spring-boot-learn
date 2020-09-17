@@ -11,8 +11,6 @@ import lombok.Data;
  * <p>
  * 提现记录
  * </p>
- *
- * @author minbo
  */
 @Data
 @ApiModel(value = "PayWithdrawHis对象", description = "提现记录")

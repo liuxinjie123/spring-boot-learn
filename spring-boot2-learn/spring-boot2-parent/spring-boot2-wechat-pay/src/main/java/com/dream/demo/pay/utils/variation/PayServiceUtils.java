@@ -20,9 +20,6 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * 支付服务工具类
- * 
- * @author Minbo
- *
  */
 @Slf4j
 public class PayServiceUtils {

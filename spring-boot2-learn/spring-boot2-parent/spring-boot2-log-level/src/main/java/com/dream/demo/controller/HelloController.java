@@ -6,17 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author Minbo
- */
 @RestController
 @Slf4j
-public class InitController {
+public class HelloController {
 
 	/**
 	 * http://localhost:9090/hello
-	 * 
-	 * @return
 	 */
 	@ApiOperation(value = "/hello 欢迎入口", httpMethod = "GET")
 	@RequestMapping(value = "/hello")

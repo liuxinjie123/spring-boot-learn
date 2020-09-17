@@ -14,10 +14,6 @@ import org.apache.commons.lang.time.DateUtils;
 /**
  * 日期工具类
  */
-/**
- * @author CJS
- *
- */
 public final class DateUtil {
 
 	public static final int DATE_NUM = 0;

@@ -17,9 +17,6 @@ public class MapUtils {
 
 	/**
 	 * 对map根据key进行排序 ASCII 顺序
-	 * 
-	 * @param 无序的map
-	 * @return
 	 */
 	public static SortedMap<String, Object> sortMap(Map<String, Object> map) {
 		List<Map.Entry<String, Object>> infoIds = new ArrayList<Map.Entry<String, Object>>(map.entrySet());

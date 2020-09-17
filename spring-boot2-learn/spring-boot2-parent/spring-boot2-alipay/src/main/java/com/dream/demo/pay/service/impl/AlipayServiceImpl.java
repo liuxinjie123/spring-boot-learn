@@ -14,8 +14,6 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * 支付宝自动打款
- * 
- * @author Minbo
  */
 @Service
 @Slf4j
