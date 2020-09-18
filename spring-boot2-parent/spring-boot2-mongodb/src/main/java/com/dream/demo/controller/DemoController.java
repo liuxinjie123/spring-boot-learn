@@ -1,5 +1,6 @@
 package com.dream.demo.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.dream.demo.service.DemoService;
 import com.dream.demo.util.BaseResponse;
 import com.dream.demo.vo.DemoEntity;
@@ -38,7 +39,7 @@ public class DemoController {
         demoEntity.setUrl("http://www.jd.com");
 
         this.demoService.add(demoEntity);
-
+        logger.info(JSON.toJSONString(demoEntity));
         return BaseResponse.success();
     }
 

@@ -1,13 +1,9 @@
 package com.dream.demo.controller;
 
-import com.dream.demo.service.DemoService;
 import com.dream.demo.util.BaseResponse;
-import com.dream.demo.vo.DemoEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController

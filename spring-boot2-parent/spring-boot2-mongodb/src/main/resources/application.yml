@@ -1,8 +1,0 @@
-spring:
-   application:
-      name: spring-boot-mongodb
-   data:
-      mongodb:
-         uri: mongodb://127.0.0.1/demo1
-server:
-   port: 9090
