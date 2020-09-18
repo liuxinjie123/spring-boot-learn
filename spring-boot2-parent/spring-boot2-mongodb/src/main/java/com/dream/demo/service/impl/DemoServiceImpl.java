@@ -1,6 +1,6 @@
 package com.dream.demo.service.impl;
 
-import com.dream.demo.dao.DemoDao;
+import com.dream.demo.mapper.DemoDao;
 import com.dream.demo.vo.DemoEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

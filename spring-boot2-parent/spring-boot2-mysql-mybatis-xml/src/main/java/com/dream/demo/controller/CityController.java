@@ -1,8 +1,7 @@
 package com.dream.demo.controller;
 
 import com.dream.demo.service.CityService;
-import com.dream.demo.util.JsonResult;
-import com.dream.demo.util.ResultCode;
+import com.dream.demo.util.BaseResponse;
 import com.dream.demo.vo.CityVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,14 +18,14 @@ public class CityController {
     private CityService cityService;
 
     @GetMapping
-    public JsonResult list() {
-        List<CityVo> list = this.cityService.list();
-        return new JsonResult(ResultCode.SUCCESS, list);
+    public BaseResponse list() {
+        List<CityVo> list = cityService.list();
+        return BaseResponse.success(list);
     }
 
     @GetMapping("/{id}")
-    public JsonResult findById(@PathVariable("id") Long id) {
-        CityVo obj = this.cityService.findById(id);
-        return new JsonResult(ResultCode.SUCCESS, obj);
+    public BaseResponse findById(@PathVariable("id") Long id) {
+        CityVo obj = cityService.findById(id);
+        return BaseResponse.success(obj);
     }
 }

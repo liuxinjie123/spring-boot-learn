@@ -1,6 +1,8 @@
 package com.dream.demo.entity;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -26,6 +28,9 @@ public class User implements Serializable {
 
     @ApiModelProperty(value = "是否启用")
     private Boolean enabled;
+
+    @ApiModelProperty(value = "创建时间")
+    private LocalDateTime createTime;
 
 
 }

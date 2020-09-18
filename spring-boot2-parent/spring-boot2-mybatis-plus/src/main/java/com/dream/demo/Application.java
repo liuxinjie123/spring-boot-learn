@@ -11,7 +11,7 @@ import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrap
  */
 @SpringBootApplication
 @EnableSwaggerBootstrapUI
-@MapperScan("com.dream.demo.test.dao")
+@MapperScan("com.dream.demo.mapper")
 public class Application {
 
 	public static void main(String[] args) {

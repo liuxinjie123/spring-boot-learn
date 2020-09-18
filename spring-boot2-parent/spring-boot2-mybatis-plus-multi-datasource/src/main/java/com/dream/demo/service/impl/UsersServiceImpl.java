@@ -5,7 +5,7 @@ import com.dream.demo.entity.User;
 import org.springframework.stereotype.Service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.dream.demo.dao.UserMapper;
+import com.dream.demo.mapper.UserMapper;
 import com.dream.demo.service.IUserService;
 
 import java.util.List;

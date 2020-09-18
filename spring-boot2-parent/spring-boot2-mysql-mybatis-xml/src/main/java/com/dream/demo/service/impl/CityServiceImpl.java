@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dream.demo.dao.CityDao;
+import com.dream.demo.mapper.CityMapper;
 import com.dream.demo.service.CityService;
 import com.dream.demo.vo.CityVo;
 
@@ -13,14 +13,14 @@ import com.dream.demo.vo.CityVo;
 public class CityServiceImpl implements CityService {
 
 	@Autowired
-	private CityDao cityDao;
+	private CityMapper cityMapper;
 
 	/**
 	 * 获得城市列表
 	 */
 	@Override
 	public List<CityVo> list() {
-		return this.cityDao.list();
+		return this.cityMapper.list();
 	}
 
 	/**
@@ -28,7 +28,7 @@ public class CityServiceImpl implements CityService {
 	 */
 	@Override
 	public CityVo findById(Long id) {
-		return this.cityDao.getById(id);
+		return this.cityMapper.findById(id);
 	}
 
 }

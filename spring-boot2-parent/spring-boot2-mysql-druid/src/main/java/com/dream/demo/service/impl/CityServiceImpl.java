@@ -2,7 +2,7 @@ package com.dream.demo.service.impl;
 
 import java.util.List;
 
-import com.dream.demo.dao.CityDao;
+import com.dream.demo.mapper.CityDao;
 import com.dream.demo.vo.CityVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

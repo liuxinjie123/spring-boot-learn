@@ -29,7 +29,7 @@ public class UserController {
 	@GetMapping
 	public BaseResponse userList() {
 		// 框架自带的方法
-		List<User> list = userService.list(null);
+		List<User> list = userService.list();
 		return BaseResponse.success(list);
 	}
 
