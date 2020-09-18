@@ -1,30 +1,26 @@
 package com.dream.demo.service.impl;
 
-import java.util.List;
-
+import com.baomidou.dynamic.datasource.annotation.DS;
+import com.dream.demo.entity.User;
 import org.springframework.stereotype.Service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.dream.demo.dao.UsersMapper;
-import com.dream.demo.entity.vo.Users;
-import com.dream.demo.service.IUsersService;
+import com.dream.demo.dao.UserMapper;
+import com.dream.demo.service.IUserService;
+
+import java.util.List;
 
 /**
- * <p>
  * 服务实现类
- * </p>
- *
- * @author Minbo
- * @since 2020-03-27
  */
 @Service
-//@DS("slave_1")
-public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements IUsersService {
+public class UsersServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
 	@Override
 //	@DS("master")
-	public List<Users> listDbInfo() {
-		return this.baseMapper.listDbInfo();
+	@DS("slave_1")
+	public List<User> list() {
+		return baseMapper.list();
 	}
 
 }

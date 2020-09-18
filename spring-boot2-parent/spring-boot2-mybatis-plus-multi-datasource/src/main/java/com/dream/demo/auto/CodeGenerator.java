@@ -1,4 +1,5 @@
 package com.dream.demo.auto;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -20,9 +21,6 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
 /**
  * 代码生成器
- * 
- * @author Minbo.He
- *
  */
 public class CodeGenerator {
 

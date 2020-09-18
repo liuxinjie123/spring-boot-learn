@@ -1,21 +1,15 @@
 package com.dream.demo.dao;
 
-import com.dream.demo.entity.vo.Users;
+import com.dream.demo.entity.User;
 
 import java.util.List;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * <p>
  * Mapper 接口
- * </p>
- *
- * @author Minbo
- * @since 2020-03-27
  */
-//@DS("slave_1")
-public interface UsersMapper extends BaseMapper<Users> {
+public interface UserMapper extends BaseMapper<User> {
 
 	// 使用@DS注解，可以切换数据源。如果没有配置@DS，则使用默认数据源（使用配置文件中的primary源）
 	// @DS 可以注解在方法上和类上，同时存在方法注解优先于类上注解
@@ -23,5 +17,5 @@ public interface UsersMapper extends BaseMapper<Users> {
 
 //	@DS("slave_1")
 //	@DS("master")
-	public List<Users> listDbInfo();
+	public List<User> list();
 }

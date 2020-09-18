@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.dream.demo.dao.UsersMapper">
+<mapper namespace="com.dream.demo.dao.UserMapper">
 
-	<select id="listDbInfo" resultType="com.dream.demo.entity.vo.Users">
-		select * from users
+	<select id="list" resultType="com.dream.demo.entity.User">
+		select * from user
 	</select>
 
 </mapper>
