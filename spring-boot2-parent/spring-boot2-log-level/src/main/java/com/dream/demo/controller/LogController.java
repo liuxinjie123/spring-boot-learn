@@ -35,8 +35,6 @@ public class LogController {
 
 	/**
 	 * http://localhost:9090/getLogger
-	 * 
-	 * @return
 	 */
 	@ApiOperation(value = "获得当前项目：日志输出级别", httpMethod = "GET")
 	@GetMapping("/getLogger")
@@ -50,8 +48,6 @@ public class LogController {
 
 	/**
 	 * http://localhost:9090/setLogger
-	 * 
-	 * @return
 	 */
 	@ApiOperation(value = "设置当前项目：日志输出级别（INFO/DEBUG）", httpMethod = "POST")
 	@PostMapping("/setLogger")
