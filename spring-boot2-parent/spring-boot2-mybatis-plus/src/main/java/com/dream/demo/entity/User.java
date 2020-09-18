@@ -1,4 +1,4 @@
-package com.dream.demo.test.entity.vo;
+package com.dream.demo.entity;
 
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;

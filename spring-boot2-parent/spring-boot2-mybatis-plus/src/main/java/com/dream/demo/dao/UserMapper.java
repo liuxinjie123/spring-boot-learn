@@ -1,6 +1,6 @@
-package com.dream.demo.test.dao;
+package com.dream.demo.dao;
 
-import com.dream.demo.test.entity.vo.User;
+import com.dream.demo.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 public interface UserMapper extends BaseMapper<User> {

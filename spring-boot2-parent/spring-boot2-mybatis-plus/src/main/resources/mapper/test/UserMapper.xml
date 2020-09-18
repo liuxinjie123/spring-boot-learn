@@ -3,7 +3,7 @@
 <mapper namespace="com.dream.demo.test.dao.UserMapper">
 
 	<!-- 举一个sql案例 -->
-	<select id="findByName" resultType="com.dream.demo.test.entity.vo.User">
+	<select id="findByName" resultType="com.dream.demo.entity.User">
 		select * from user where name = #{name} limit 1
 	</select>
 

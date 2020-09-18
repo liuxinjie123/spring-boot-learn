@@ -1,6 +1,6 @@
-package com.dream.demo.test.service;
+package com.dream.demo.service;
 
-import com.dream.demo.test.entity.vo.User;
+import com.dream.demo.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -1,8 +1,8 @@
-package com.dream.demo.test.service.impl;
+package com.dream.demo.service.impl;
 
 import com.dream.demo.test.dao.UserMapper;
-import com.dream.demo.test.entity.vo.User;
-import com.dream.demo.test.service.IUserService;
+import com.dream.demo.entity.User;
+import com.dream.demo.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
