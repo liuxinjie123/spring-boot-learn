@@ -11,13 +11,13 @@ import org.springframework.stereotype.Component;
 public class CityDaoImpl extends BaseDao implements CityDao {
 
 	@Override
-	public List<CityVo> listCities111() {
-		return this.sqlSessionTemplateOfMaster.selectList("listCities111");
+	public List<CityVo> list1() {
+		return sqlSessionTemplateOfMaster.selectList("list1");
 	}
 
 	@Override
-	public List<CityVo> listCities222() {
-		return this.sqlSessionTemplateOfSlave.selectList("listCities222");
+	public List<CityVo> list2() {
+		return sqlSessionTemplateOfSlave.selectList("list2");
 	}
 
 }

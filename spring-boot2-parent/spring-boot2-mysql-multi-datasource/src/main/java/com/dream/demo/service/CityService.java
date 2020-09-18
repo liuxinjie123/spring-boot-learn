@@ -6,7 +6,7 @@ import com.dream.demo.vo.CityVo;
 
 public interface CityService {
 
-	public List<CityVo> listCities111();
+	public List<CityVo> list1();
 
-	public List<CityVo> listCities222();
+	public List<CityVo> list2();
 }

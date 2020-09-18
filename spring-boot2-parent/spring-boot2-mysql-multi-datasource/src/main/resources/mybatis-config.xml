@@ -7,6 +7,6 @@
         <package name="com.dream"/>
     </typeAliases>
     <mappers>
-    		<mapper resource="mybatis/mapper/CityMapper.xml"/>
+    		<mapper resource="mybatis/mapper/*.xml"/>
     </mappers>
 </configuration>

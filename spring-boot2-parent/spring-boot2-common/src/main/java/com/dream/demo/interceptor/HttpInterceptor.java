@@ -48,7 +48,7 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
 		// 不做拦截
 		if (uri.contains("webjars") || uri.contains("/swagger") || uri.contains("/log")
 				|| uri.contains("/csrf") || uri.equals("/") || uri.equals("/error")
-				|| uri.contains("/user")) {
+				|| uri.contains("/user") || uri.contains("/city")) {
 			return true;
 		}
 
