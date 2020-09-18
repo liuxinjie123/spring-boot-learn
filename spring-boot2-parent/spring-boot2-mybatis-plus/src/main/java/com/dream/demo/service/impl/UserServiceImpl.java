@@ -20,7 +20,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 		return baseMapper.list();
 	}
 
-
 	@Override
 	public User findByName(String name) {
 		return baseMapper.findByName(name);

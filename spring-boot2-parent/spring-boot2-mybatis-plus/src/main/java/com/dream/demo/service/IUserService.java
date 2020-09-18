@@ -11,6 +11,7 @@ import java.util.List;
  */
 public interface IUserService extends IService<User> {
 
+	@Override
 	public List<User> list();
 
 	/**
