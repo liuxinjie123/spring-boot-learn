@@ -31,18 +31,18 @@ public class HelloController {
 	/**
 	 * http://localhost:9090/listCities
 	 */
-	@GetMapping("/listCities")
-	public BaseResponse listCities() {
-		List<CityVo> list = this.cityService.listCities();
+	@GetMapping("/city")
+	public BaseResponse cityList() {
+		List<CityVo> list = this.cityService.list();
 		return BaseResponse.success(list);
 	}
 
 	/**
 	 * http://localhost:9090/getCityById?id=1
 	 */
-	@GetMapping("/getCityById")
-	public BaseResponse listCities(Long id) {
-		CityVo obj = this.cityService.getCityById(id);
+	@GetMapping("/city/{id}")
+	public BaseResponse findCityById(Long id) {
+		CityVo obj = this.cityService.findById(id);
 		return BaseResponse.success(obj);
 	}
 }

@@ -16,13 +16,13 @@ public class CityDaoImpl implements CityDao {
 	public SqlSessionTemplate sqlSessionTemplate;
 
 	@Override
-	public List<CityVo> listCities() {
-		return this.sqlSessionTemplate.selectList("listCities");
+	public List<CityVo> list() {
+		return this.sqlSessionTemplate.selectList("list");
 	}
 
 	@Override
-	public CityVo getCityById(Long id) {
-		return this.sqlSessionTemplate.selectOne("getCityById", id);
+	public CityVo findById(Long id) {
+		return this.sqlSessionTemplate.selectOne("findById", id);
 	}
 
 }

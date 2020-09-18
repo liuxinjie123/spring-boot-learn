@@ -17,24 +17,4 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	/**
-	 * 开启过滤器功能
-	 */
-	private CorsConfiguration buildConfig() {
-		CorsConfiguration corsConfiguration = new CorsConfiguration();
-		corsConfiguration.addAllowedOrigin("*");
-		corsConfiguration.addAllowedHeader("*");
-		corsConfiguration.addAllowedMethod("*");
-		return corsConfiguration;
-	}
-
-	/**
-	 * 跨域过滤器
-	 */
-	@Bean
-	public CorsFilter corsFilter() {
-		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-		source.registerCorsConfiguration("/**", buildConfig());
-		return new CorsFilter(source);
-	}
 }

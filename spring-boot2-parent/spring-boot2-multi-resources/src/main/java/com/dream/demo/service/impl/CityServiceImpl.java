@@ -19,16 +19,16 @@ public class CityServiceImpl implements CityService {
 	 * 获得城市列表
 	 */
 	@Override
-	public List<CityVo> listCities() {
-		return this.cityDao.listCities();
+	public List<CityVo> list() {
+		return this.cityDao.list();
 	}
 
 	/**
 	 * 根据id，获得某个城市
 	 */
 	@Override
-	public CityVo getCityById(Long id) {
-		return this.cityDao.getCityById(id);
+	public CityVo findById(Long id) {
+		return this.cityDao.findById(id);
 	}
 
 }
