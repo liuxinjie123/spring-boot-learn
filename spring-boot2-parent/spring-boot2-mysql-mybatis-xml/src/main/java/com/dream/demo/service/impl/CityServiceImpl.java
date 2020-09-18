@@ -9,6 +9,8 @@ import com.dream.demo.mapper.CityMapper;
 import com.dream.demo.service.CityService;
 import com.dream.demo.vo.CityVo;
 
+import javax.annotation.Resource;
+
 @Service
 public class CityServiceImpl implements CityService {
 
