@@ -12,6 +12,7 @@
 
 	<artifactId>spring-boot2-mysql-mybatis-xml</artifactId>
 	<packaging>jar</packaging>
+	<groupId>com.dream.mybatis</groupId>
 
 	<name>spring-boot2-mysql-mybatis-xml</name>
 	<description>Spring Boot, MVC, Rest API for App</description>

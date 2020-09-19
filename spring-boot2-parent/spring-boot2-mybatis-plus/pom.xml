@@ -12,6 +12,7 @@
 	</parent>
 
 	<artifactId>spring-boot2-mybatis-plus</artifactId>
+	<groupId>com.dream.mybatisplus</groupId>
 	<packaging>jar</packaging>
 
 	<name>spring-boot2-mybatis-plus</name>
