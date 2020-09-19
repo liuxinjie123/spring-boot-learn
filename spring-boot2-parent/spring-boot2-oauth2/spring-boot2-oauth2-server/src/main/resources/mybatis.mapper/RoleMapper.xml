@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dream.mapper.RoleMapper">
+
+    <select id="findByUserId" resultType="com.dream.pojo.Role">
+		select r.id, r.role_name, r.role_desc
+		from oauth_role r
+		inner join oauth_user_role ur on r.id=ur.rid
+		WHERE ur.uid=#{userId}
+		order by ur.id DESC
+	</select>
+
+
+
+</mapper>
