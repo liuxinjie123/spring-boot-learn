@@ -3,7 +3,7 @@
 <mapper namespace="com.dream.mapper.OAuthUserMapper">
 
     <select id="findByUsername" resultType="com.dream.pojo.User">
-		select * from oauth_user WHERE user_name=#{username} limit 1;
+		select * from oauth_user WHERE username=#{username} limit 1;
 	</select>
 
 </mapper>

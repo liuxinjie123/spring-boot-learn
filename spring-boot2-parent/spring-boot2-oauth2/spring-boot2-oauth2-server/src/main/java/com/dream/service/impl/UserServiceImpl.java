@@ -11,12 +11,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl extends ServiceImpl<OAuthUserMapper, User> implements UserService {
-    @Autowired
-    private OAuthUserMapper userMapper;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userMapper.findByUsername(username);
+        return baseMapper.findByUsername(username);
     }
 
 
