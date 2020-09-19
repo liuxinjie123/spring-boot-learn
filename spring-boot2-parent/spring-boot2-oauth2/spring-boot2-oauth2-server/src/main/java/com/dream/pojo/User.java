@@ -1,7 +1,9 @@
 package com.dream.pojo;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -10,6 +12,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+
+@EqualsAndHashCode(callSuper = false)
+@Accessors(chain = true)
 @Data
 @NoArgsConstructor
 public class User implements UserDetails {
