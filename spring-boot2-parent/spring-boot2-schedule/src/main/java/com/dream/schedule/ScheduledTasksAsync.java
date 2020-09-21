@@ -14,8 +14,6 @@ import org.springframework.stereotype.Component;
  * 
  * 配置Application入口的@EnableAsync，在定时任务方法前面配置@Async，即配置了任务线程池
  * 
- * @author Minbo.He
- *
  */
 @Component
 public class ScheduledTasksAsync {
