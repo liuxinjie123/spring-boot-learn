@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class InitRestController {
+public class HelloController {
 
-	protected static Logger logger = LoggerFactory.getLogger(InitRestController.class);
+	protected static Logger logger = LoggerFactory.getLogger(HelloController.class);
 
 	/**
 	 * http://localhost:9090/hello
