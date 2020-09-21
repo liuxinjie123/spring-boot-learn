@@ -15,8 +15,6 @@ public class HelloController {
 	 * http://localhost:9090/hello
 	 * 
 	 * 在WebSecurityConfiguration.java文件中，开启了忽略放行，不验证token
-	 * 
-	 * @return
 	 */
 	@GetMapping("/hello")
 	public BaseResponse hello() {

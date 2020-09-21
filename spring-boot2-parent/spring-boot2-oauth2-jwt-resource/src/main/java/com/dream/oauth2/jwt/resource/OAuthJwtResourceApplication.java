@@ -17,28 +17,4 @@ public class OAuthJwtResourceApplication {
 		SpringApplication.run(OAuthJwtResourceApplication.class, args);
 	}
 
-	/**
-	 * 开启过滤器功能
-	 * 
-	 * @return
-	 */
-	private CorsConfiguration buildConfig() {
-		CorsConfiguration corsConfiguration = new CorsConfiguration();
-		corsConfiguration.addAllowedOrigin("*");
-		corsConfiguration.addAllowedHeader("*");
-		corsConfiguration.addAllowedMethod("*");
-		return corsConfiguration;
-	}
-
-	/**
-	 * 跨域过滤器
-	 * 
-	 * @return
-	 */
-	@Bean
-	public CorsFilter corsFilter() {
-		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-		source.registerCorsConfiguration("/**", buildConfig());
-		return new CorsFilter(source);
-	}
 }
